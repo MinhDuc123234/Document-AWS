@@ -15,21 +15,21 @@
     <title>Blog 2 :: Báo cáo thực tập</title>
 
     
-    <link href="../../../css/nucleus.css?1765185780" rel="stylesheet">
-    <link href="../../../css/fontawesome-all.min.css?1765185780" rel="stylesheet">
-    <link href="../../../css/hybrid.css?1765185780" rel="stylesheet">
-    <link href="../../../css/featherlight.min.css?1765185780" rel="stylesheet">
-    <link href="../../../css/perfect-scrollbar.min.css?1765185780" rel="stylesheet">
-    <link href="../../../css/auto-complete.css?1765185780" rel="stylesheet">
-    <link href="../../../css/atom-one-dark-reasonable.css?1765185780" rel="stylesheet">
-    <link href="../../../css/theme.css?1765185780" rel="stylesheet">
-    <link href="../../../css/hugo-theme.css?1765185780" rel="stylesheet">
+    <link href="../../../css/nucleus.css?1765202316" rel="stylesheet">
+    <link href="../../../css/fontawesome-all.min.css?1765202316" rel="stylesheet">
+    <link href="../../../css/hybrid.css?1765202316" rel="stylesheet">
+    <link href="../../../css/featherlight.min.css?1765202316" rel="stylesheet">
+    <link href="../../../css/perfect-scrollbar.min.css?1765202316" rel="stylesheet">
+    <link href="../../../css/auto-complete.css?1765202316" rel="stylesheet">
+    <link href="../../../css/atom-one-dark-reasonable.css?1765202316" rel="stylesheet">
+    <link href="../../../css/theme.css?1765202316" rel="stylesheet">
+    <link href="../../../css/hugo-theme.css?1765202316" rel="stylesheet">
     
-    <link href="../../../css/theme-workshop.css?1765185780" rel="stylesheet">
+    <link href="../../../css/theme-workshop.css?1765202316" rel="stylesheet">
     
     
 
-    <script src="../../../js/jquery-3.3.1.min.js?1765185780"></script>
+    <script src="../../../js/jquery-3.3.1.min.js?1765202316"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -88,14 +88,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../../js/lunr.min.js?1765185780"></script>
-<script type="text/javascript" src="../../../js/auto-complete.js?1765185780"></script>
+<script type="text/javascript" src="../../../js/lunr.min.js?1765202316"></script>
+<script type="text/javascript" src="../../../js/auto-complete.js?1765202316"></script>
 <script type="text/javascript">
     
-        var baseurl = "https:\/\/github.com\/MinhDuc123234\/Document-AWS-.git\/\/vi";
+        var baseurl = "https:\/\/minhduc123234.github.io\/Document-AWS\/\/vi";
     
 </script>
-<script type="text/javascript" src="../../../js/search.js?1765185780"></script>
+<script type="text/javascript" src="../../../js/search.js?1765202316"></script>
  
   </div>
 
@@ -739,14 +739,14 @@
                        
                 <option
                   id="en"
-                  value="https://github.com/MinhDuc123234/Document-AWS-.git/en/3-blogstranslated/3.2-blog2/"
+                  value="https://minhduc123234.github.io/Document-AWS/en/3-blogstranslated/3.2-blog2/"
                 >
                   English
                 </option>
                             
                 <option
                   id="vi"
-                  value="https://github.com/MinhDuc123234/Document-AWS-.git/vi/3-blogstranslated/3.2-blog2/"
+                  value="https://minhduc123234.github.io/Document-AWS/vi/3-blogstranslated/3.2-blog2/"
                   selected
                 >
                   Tiếng Việt
@@ -876,15 +876,10 @@
   <ul>
     <li><a href="#tính-năng-cấp-quyền-truy-cập-dữ-liệu-trong-các-hệ-thống-rag"><strong>Tính năng cấp quyền truy cập dữ liệu trong các hệ thống RAG</strong></a></li>
     <li><a href="#tổng-quan-về-việc-sử-dụng-rag"><strong>Tổng quan về việc sử dụng RAG</strong></a></li>
-    <li><a href="#tổng-quan-giải-pháp-s3-access-grants-với-bedrock-knowledge-bases"><strong>Tổng quan giải pháp: S3 Access Grants với Bedrock Knowledge Bases</strong></a>
-      <ul>
-        <li><a href="#trong-ví-dụ-sau-bạn-có-một-tổ-chức-acme-muốn-tạo-một-chatbot-ai-sinh-cho-nhân-viên-của-họ-có-nhiều-đội-nhóm-trong-tổ-chức-marketing-sales-hr-và-it-làm-việc-trên-các-dự-án-trong-toàn-bộ-tổ-chức-bạn-có-năm-người-dùng-các-principal-truy-cập-ứng-dụng-với-quyền-nhóm-như-sau">Trong ví dụ sau, bạn có một tổ chức ACME muốn tạo một chatbot AI sinh cho nhân viên của họ. Có nhiều đội nhóm trong tổ chức (Marketing, Sales, HR và IT) làm việc trên các dự án trong toàn bộ tổ chức. Bạn có năm người dùng (các principal truy cập ứng dụng) với quyền nhóm như sau:</a></li>
-      </ul>
-    </li>
+    <li><a href="#tổng-quan-giải-pháp-s3-access-grants-với-bedrock-knowledge-bases"><strong>Tổng quan giải pháp: S3 Access Grants với Bedrock Knowledge Bases</strong></a></li>
     <li><a href="#bước-1-người-dùng-sử-dụng-idp-để-đăng-nhập-vào-ứng-dụng-ai-sinh"><strong>Bước 1: Người dùng sử dụng IdP để đăng nhập vào ứng dụng AI sinh</strong></a></li>
     <li><a href="#bước-2-trao-đổi-token-với-iam-identity-center"><strong>Bước 2: Trao đổi token với IAM Identity Center</strong></a></li>
-    <li><a href="#sau-khi-bob-được-xác-thực-và-chuyển-token-của-mình-cho-ứng-dụng-ai-sinh-ứng-dụng-sẽ-trao-đổi-identity-token-từ-idp-với-identity-token-của-iam-identity-center-và-lấy-thông-tin-xác-thực-tạm-thời-temporary-credentials-thay-mặt-cho-bob-bạn-sẽ-tạo-một-hàm-python-có-tên-assume_role-để-truyền-nhiều-biến-khác-nhau-cho-phép-bob-giả-định-vai-trò-assume-role-trong-aws">Sau khi Bob được xác thực và chuyển token của mình cho ứng dụng AI sinh, ứng dụng sẽ trao đổi identity token từ IdP với identity token của IAM Identity Center và lấy thông tin xác thực tạm thời (temporary credentials) thay mặt cho Bob. Bạn sẽ tạo một hàm Python có tên assume_role để truyền nhiều biến khác nhau, cho phép Bob giả định vai trò (assume role) trong AWS:</a></li>
-    <li><a href="#bước-3-truy-xuất-phạm-vi-cấp-quyền-của-người-gọi-caller-grant-scopes--tiếp-theo-bạn-cần-truy-xuất-những-gì-bob-được-phép-truy-cập-trong-nguồn-dữ-liệu-bằng-cách-sử-dụng-s3-access-grants-trong-ví-dụ-này-bạn-cần-xác-thực-dữ-liệu-mà-bob-được-cấp-quyền-truy-cập-với-nguồn-dữ-liệu-chứ-không-phải-với-từng-đối-tượng-s3-cụ-thể"><strong>Bước 3: Truy xuất phạm vi cấp quyền của người gọi (caller grant scopes)</strong> Tiếp theo, bạn cần truy xuất những gì <strong>Bob được phép truy cập</strong> trong nguồn dữ liệu bằng cách sử dụng <strong>S3 Access Grants</strong>. Trong ví dụ này, bạn cần <strong>xác thực dữ liệu mà Bob được cấp quyền truy cập với nguồn dữ liệu</strong>, chứ không phải với từng đối tượng S3 cụ thể.</a></li>
+    <li><a href="#bước-3-truy-xuất-phạm-vi-cấp-quyền-của-người-gọi-caller-grant-scopes"><strong>Bước 3: Truy xuất phạm vi cấp quyền của người gọi (caller grant scopes)</strong></a></li>
     <li><a href="#bước-4-kiểm-tra-phạm-vi-cấp-quyền-của-người-gọi-check-caller-grant-scopes"><strong>Bước 4: Kiểm tra phạm vi cấp quyền của người gọi (Check caller grant scopes)</strong></a>
       <ul>
         <li></li>
@@ -921,16 +916,22 @@
 <p>Khách hàng của chúng tôi cho biết họ lo ngại rằng việc thêm ngữ cảnh bổ sung vào prompt có thể dẫn đến rò rỉ thông tin nhạy cảm cho các principal (người dùng hoặc ứng dụng) có thể tồn tại trong một số công cụ này hoặc cho dữ liệu phi cấu trúc trong kho tri thức. Như đã đề cập trong các bài viết trước (<a href="https://aws.amazon.com/blogs/security/implement-effective-data-authorization-mechanisms-to-secure-your-data-used-in-generative-ai-applications/">Part 1</a>, <a href="https://aws.amazon.com/blogs/security/implement-effective-data-authorization-mechanisms-to-secure-your-data-used-in-generative-ai-applications-part-2/">Part 2</a>), LLM nên được xem là các thực thể không đáng tin cậy vì chúng không thực hiện kiểm soát quyền truy cập (authorization) như một phần của phản hồi. Một mô hình tư duy hợp lý cho các tổ chức là giả định rằng bất kỳ dữ liệu nào được gửi vào LLM trong prompt đều có thể được trả lại cho principal. Với các công cụ (API mà LLM có thể gọi để tương tác với các tài nguyên bên ngoài), bạn có thể truyền mã định danh (identity token) của principal vào công cụ để xác định những gì principal được phép truy cập và những hành động nào được cho phép. Các khả năng trên nhiều cơ sở dữ liệu vector — bao gồm các bộ lọc metadata và việc đồng bộ hóa thông tin danh tính giữa nguồn dữ liệu và kho tri thức — giúp cải thiện kết quả từ kho tri thức và cung cấp khả năng lọc cơ bản. Tuy nhiên, điều này không cung cấp khả năng cấp quyền mạnh mẽ dựa trên nguồn dữ liệu như nguồn xác thực duy nhất (source of truth) mà một số khách hàng đang tìm kiếm.</p>
 <p>Trong bài viết này, tôi sẽ trình bày một mô hình kiến trúc để cung cấp cơ chế cấp quyền mạnh mẽ cho các kết quả trả về từ kho tri thức, kèm theo ví dụ minh họa sử dụng <a href="https://aws.amazon.com/s3/features/access-grants/">Amazon S3 Access Grants</a> với <a href="https://aws.amazon.com/bedrock/knowledge-bases/">Amazon Bedrock Knowledge Bases</a>. Tôi cũng sẽ đưa ra một số điểm cần xem xét khi triển khai các mô hình kiến trúc tương tự với các nguồn dữ liệu khác.</p>
 <h2 id="tổng-quan-về-việc-sử-dụng-rag"><strong>Tổng quan về việc sử dụng RAG</strong></h2>
-<p>Kiến trúc RAG có nhiều điểm tương đồng với các công cụ tìm kiếm, nhưng cũng có một số khác biệt quan trọng. Mặc dù cả hai đều sử dụng các nguồn dữ liệu được lập chỉ mục để tìm thông tin liên quan, nhưng cách tiếp cận trong việc truy cập dữ liệu của chúng lại khác nhau. Các công cụ tìm kiếm cung cấp liên kết đến các nguồn thông tin, yêu cầu người dùng phải truy cập trực tiếp vào nguồn dữ liệu gốc dựa trên quyền được cấp cho họ. Quy trình này được minh họa trong Hình 1.<br>
-<img src="#ZgotmplZ" alt=""></p>
-<p><em>Hình 1: Cấu trúc principal (trong ví dụ này là Người dùng) truy cập vào nguồn dữ liệu sau khi công cụ tìm kiếm trả về kết quả.</em></p>
+<p>Kiến trúc RAG có nhiều điểm tương đồng với các công cụ tìm kiếm, nhưng cũng có một số khác biệt quan trọng. Mặc dù cả hai đều sử dụng các nguồn dữ liệu được lập chỉ mục để tìm thông tin liên quan, nhưng cách tiếp cận trong việc truy cập dữ liệu của chúng lại khác nhau. Các công cụ tìm kiếm cung cấp liên kết đến các nguồn thông tin, yêu cầu người dùng phải truy cập trực tiếp vào nguồn dữ liệu gốc dựa trên quyền được cấp cho họ. Quy trình này được minh họa trong Hình 1.</p>
+<p align="center">
+  <img src="../../../images/3-BlogsTranslated/blog2_1.jpg" alt="Picture 1" />
+  <br/>
+  <strong style="font-size: 18px;">Hình 1: Cấu trúc principal (trong ví dụ này là Người dùng) truy cập vào nguồn dữ liệu sau khi công cụ tìm kiếm trả về kết quả.</strong>
+</p>
 <p>Không giống như các công cụ tìm kiếm, các hệ thống RAG trả về kết quả từ cơ sở dữ liệu vector trực tiếp thông qua LLM, bỏ qua bước kiểm tra quyền truy cập tại nguồn dữ liệu gốc. Mặc dù việc lọc theo metadata có thể giúp kiểm soát quyền truy cập, nhưng cách tiếp cận này tồn tại hai thách thức chính. Thứ nhất, các cơ sở dữ liệu vector chỉ đồng bộ định kỳ, nên các thay đổi về quyền truy cập trong nguồn dữ liệu không được cập nhật ngay lập tức. Thứ hai, với các quyền danh tính phức tạp — nơi một principal có thể thuộc hàng trăm nhóm — việc lọc kết quả một cách chính xác trở nên rất khó khăn. Điều này khiến lọc theo metadata không đủ cho những tổ chức yêu cầu cơ chế cấp quyền chặt chẽ hơn. Quy trình này được minh họa trong Hình 2.</p>
-<p><img src="#ZgotmplZ" alt=""></p>
-<p><em>Hình 2: Một ứng dụng truy cập dữ liệu trong cơ sở dữ liệu vector.</em></p>
+<p align="center">
+  <img src="../../../images/3-BlogsTranslated/blog2_2.jpg" alt="Picture 1" />
+  <br/>
+  <strong style="font-size: 18px;">Hình 2: Một ứng dụng truy cập dữ liệu trong cơ sở dữ liệu vector.</strong>
+</p>
 <p>Để triển khai cơ chế cấp quyền mạnh mẽ cho việc truy cập dữ liệu trong kho tri thức, hãy xác minh quyền truy cập trực tiếp tại nguồn dữ liệu thay vì dựa vào các hệ thống trung gian. Khi sử dụng ví dụ về công cụ tìm kiếm, việc xác minh quyền truy cập diễn ra khi truy xuất kết quả thực tế từ nguồn dữ liệu, không phải trong quá trình tìm kiếm ban đầu. Đối với các cơ sở dữ liệu vector, ứng dụng AI sinh sẽ xác thực quyền truy cập bằng cách gửi yêu cầu cấp quyền đến nguồn dữ liệu trước khi truy xuất dữ liệu. Cách này giúp đảm bảo rằng nguồn dữ liệu, nơi duy trì các quy tắc kiểm soát truy cập chính thống, sẽ xác định xem principal có quyền truy cập vào các đối tượng cụ thể hay không. Việc kiểm tra cấp quyền theo thời gian thực này đồng nghĩa với việc các thay đổi về quyền truy cập được phản ánh ngay lập tức khi truy cập vào nguồn dữ liệu. Mẫu cấp quyền này tương tự như cách  <a href="https://aws.amazon.com/lake-formation">AWS Lake Formation</a> quản lý quyền truy cập đối với dữ liệu có cấu trúc. Lake Formation đánh giá quyền khi một principal yêu cầu truy cập vào cơ sở dữ liệu hoặc bảng, cấp hoặc từ chối quyền truy cập dựa trên quyền đã được định nghĩa cho principal. Bạn có thể triển khai các cơ chế kiểm soát quyền tương tự cho kết quả của cơ sở dữ liệu vector trước khi cung cấp ngữ cảnh đó cho các mô hình ngôn ngữ lớn.</p>
 <p>Hãy cùng xem xét một giải pháp ví dụ sử dụng S3 Access Grants kết hợp với Amazon Bedrock Knowledge Bases trong trường hợp thực tế.</p>
 <h2 id="tổng-quan-giải-pháp-s3-access-grants-với-bedrock-knowledge-bases"><strong>Tổng quan giải pháp: S3 Access Grants với Bedrock Knowledge Bases</strong></h2>
-<h3 id="trong-ví-dụ-sau-bạn-có-một-tổ-chức-acme-muốn-tạo-một-chatbot-ai-sinh-cho-nhân-viên-của-họ-có-nhiều-đội-nhóm-trong-tổ-chức-marketing-sales-hr-và-it-làm-việc-trên-các-dự-án-trong-toàn-bộ-tổ-chức-bạn-có-năm-người-dùng-các-principal-truy-cập-ứng-dụng-với-quyền-nhóm-như-sau">Trong ví dụ sau, bạn có một tổ chức ACME muốn tạo một chatbot AI sinh cho nhân viên của họ. Có nhiều đội nhóm trong tổ chức (Marketing, Sales, HR và IT) làm việc trên các dự án trong toàn bộ tổ chức. Bạn có năm người dùng (các principal truy cập ứng dụng) với quyền nhóm như sau:</h3>
+<p>Trong ví dụ sau, bạn có một tổ chức ACME muốn tạo một chatbot AI sinh cho nhân viên của họ. Có nhiều đội nhóm trong tổ chức (Marketing, Sales, HR và IT) làm việc trên các dự án trong toàn bộ tổ chức. Bạn có năm người dùng (các principal truy cập ứng dụng) với quyền nhóm như sau:</p>
 <ul>
 <li>Alice: Marketing Team</li>
 <li>Bob: Sales Team, Project A Team</li>
@@ -939,8 +940,12 @@
 <li>Eve: Marketing Team</li>
 </ul>
 <p>Mỗi principal sẽ được truy cập vào thư mục dự án (ví dụ <code>/projects/projectA</code>) hoặc thư mục phòng ban tương ứng (ví dụ <code>departments/marketing/</code>). Marketing cũng sẽ có quyền truy cập mọi thứ trong thư mục <code>projects</code> (<code>/projects/*</code>) trừ khi đó là các tệp được coi là rất mật (highly confidential). Để đánh dấu các tệp của Project B là rất mật, bạn sẽ thêm thẻ metadata cho các đối tượng trong tiền tố Project C với <code>classification = ‘highly confidential’</code>. Hình 3 cho thấy mối quan hệ giữa các principal và quyền truy cập vào các thư mục khác nhau trong nguồn dữ liệu. Ví dụ, chỉ có Carol được truy cập dữ liệu rất mật trong thư mục Project B.</p>
-<p><img src="#ZgotmplZ" alt=""><br>
-<em>Hình 3: Quyền nhóm của tổ chức</em></p>
+<p align="center">
+  <img src="../../../images/3-BlogsTranslated/blog2_3.jpg" alt="Picture 1" />
+  <br/>
+  <strong style="font-size: 18px;">Hình 3: Quyền nhóm của tổ chức</strong>
+</p>  
+*Hình 3: Quyền nhóm của tổ chức*
 <p>Để cấp quyền truy cập cho từng principal đến các đối tượng trong kho tri thức, bạn sẽ sử dụng  <a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-grants.html">Amazon S3 Access Grants</a>. Bạn có thể tìm hiểu cách thiết lập S3 Access Grants trong  <a href="https://aws.amazon.com/blogs/storage/how-to-develop-a-user-facing-data-application-with-iam-identity-center-and-s3-access-grants/">Part 1</a> hoặc <a href="https://aws.amazon.com/blogs/storage/how-to-develop-a-user-facing-data-application-with-iam-identity-center-and-s3-access-grants-part-2/">Part 2</a> của loạt bài viết này.</p>
 <p>Trong AWS IAM Identity Center, bạn sẽ thêm từng người dùng vào nhóm tương ứng của họ. Ví dụ, Bob sẽ được thêm vào cả nhóm Sales Team và nhóm Project A Team, giống như minh họa trong Hình 3.</p>
 <p>Mỗi tiền tố (ví dụ <code>projectA/</code>, <code>marketing/</code>) sẽ chứa một tệp duy nhất cung cấp trạng thái của nhóm. Ngoài ra, với Project B, bạn cũng sẽ thêm tệp <code>status.txt.metadata.json</code> để gắn thẻ (tag) cho đối tượng là rất mật (highly confidential) vì đây là dự án của bộ phận HR.</p>
@@ -990,7 +995,11 @@
 <p>Ứng dụng AI sinh sẽ lặp lại các bước 5–7 cho đến khi bạn muốn làm mới danh sách quyền truy cập (lặp lại bước 4) hoặc khi token hết hạn (lặp lại bước 3 và 4).</p>
 </li>
 </ol>
-<p><img src="#ZgotmplZ" alt=""></p>
+<p align="center">
+  <img src="../../../images/3-BlogsTranslated/blog2_4.png" alt="Picture 1" />
+  <br/>
+  <strong style="font-size: 18px;"> Figure 4: Luồng hoạt động của ứng dụng để cấp quyền truy cập dữ liệu từ từ điển</strong>
+</p>
 <p><em><strong>Hình 4: Luồng hoạt động của ứng dụng trong việc cấp quyền truy cập dữ liệu từ kho tri thức</strong></em></p>
 <p>Các phạm vi cấp quyền (grant scopes) được thể hiện trong bảng dưới đây:</p>
 <table>
@@ -1106,7 +1115,7 @@
   </tbody>
 </table>
 <h2 id="bước-2-trao-đổi-token-với-iam-identity-center"><strong>Bước 2: Trao đổi token với IAM Identity Center</strong></h2>
-<h2 id="sau-khi-bob-được-xác-thực-và-chuyển-token-của-mình-cho-ứng-dụng-ai-sinh-ứng-dụng-sẽ-trao-đổi-identity-token-từ-idp-với-identity-token-của-iam-identity-center-và-lấy-thông-tin-xác-thực-tạm-thời-temporary-credentials-thay-mặt-cho-bob-bạn-sẽ-tạo-một-hàm-python-có-tên-assume_role-để-truyền-nhiều-biến-khác-nhau-cho-phép-bob-giả-định-vai-trò-assume-role-trong-aws">Sau khi Bob được xác thực và chuyển token của mình cho ứng dụng AI sinh, ứng dụng sẽ trao đổi identity token từ IdP với identity token của IAM Identity Center và lấy thông tin xác thực tạm thời (temporary credentials) thay mặt cho Bob. Bạn sẽ tạo một hàm Python có tên assume_role để truyền nhiều biến khác nhau, cho phép Bob giả định vai trò (assume role) trong AWS:</h2>
+<p>Sau khi Bob được xác thực và chuyển token của mình cho ứng dụng AI sinh, ứng dụng sẽ trao đổi identity token từ IdP với identity token của IAM Identity Center và lấy thông tin xác thực tạm thời (temporary credentials) thay mặt cho Bob. Bạn sẽ tạo một hàm Python có tên assume_role để truyền nhiều biến khác nhau, cho phép Bob giả định vai trò (assume role) trong AWS:</p>
 <ul>
 <li>
 <p><strong>client_id:</strong> Chuỗi định danh duy nhất cho client hoặc ứng dụng. Giá trị này là ARN (Amazon Resource Name) của ứng dụng có cấu hình OAuth grants.</p>
@@ -1197,7 +1206,8 @@
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">except ClientError as e</span>:
 </span></span><span style="display:flex;"><span>        <span style="color:#f92672">print(f&#39;Error</span>: {<span style="color:#ae81ff">e}&#39;)</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">sys.exit(1)</span>
-</span></span></code></pre></div><h2 id="bước-3-truy-xuất-phạm-vi-cấp-quyền-của-người-gọi-caller-grant-scopes--tiếp-theo-bạn-cần-truy-xuất-những-gì-bob-được-phép-truy-cập-trong-nguồn-dữ-liệu-bằng-cách-sử-dụng-s3-access-grants-trong-ví-dụ-này-bạn-cần-xác-thực-dữ-liệu-mà-bob-được-cấp-quyền-truy-cập-với-nguồn-dữ-liệu-chứ-không-phải-với-từng-đối-tượng-s3-cụ-thể"><strong>Bước 3: Truy xuất phạm vi cấp quyền của người gọi (caller grant scopes)</strong>  Tiếp theo, bạn cần truy xuất những gì <strong>Bob được phép truy cập</strong> trong nguồn dữ liệu bằng cách sử dụng <strong>S3 Access Grants</strong>. Trong ví dụ này, bạn cần <strong>xác thực dữ liệu mà Bob được cấp quyền truy cập với nguồn dữ liệu</strong>, chứ không phải với từng đối tượng S3 cụ thể.</h2>
+</span></span></code></pre></div><h2 id="bước-3-truy-xuất-phạm-vi-cấp-quyền-của-người-gọi-caller-grant-scopes"><strong>Bước 3: Truy xuất phạm vi cấp quyền của người gọi (caller grant scopes)</strong></h2>
+<p>Tiếp theo, bạn cần truy xuất những gì <strong>Bob được phép truy cập</strong> trong nguồn dữ liệu bằng cách sử dụng <strong>S3 Access Grants</strong>. Trong ví dụ này, bạn cần <strong>xác thực dữ liệu mà Bob được cấp quyền truy cập với nguồn dữ liệu</strong>, chứ không phải với từng đối tượng S3 cụ thể.</p>
 <p>Để lấy danh sách các tiền tố (prefix) mà Bob được phép truy cập, bạn sẽ thực hiện các bước sau trong hàm <strong>get_caller_grant_scopes</strong>:</p>
 <ol>
 <li>
@@ -1949,19 +1959,19 @@ Nếu bạn có <strong>câu hỏi</strong> liên quan đến nội dung bài vi
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../../js/clipboard.min.js?1765185780"></script>
-    <script src="../../../js/perfect-scrollbar.min.js?1765185780"></script>
-    <script src="../../../js/perfect-scrollbar.jquery.min.js?1765185780"></script>
-    <script src="../../../js/jquery.sticky.js?1765185780"></script>
-    <script src="../../../js/featherlight.min.js?1765185780"></script>
-    <script src="../../../js/highlight.pack.js?1765185780"></script>
+    <script src="../../../js/clipboard.min.js?1765202316"></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1765202316"></script>
+    <script src="../../../js/perfect-scrollbar.jquery.min.js?1765202316"></script>
+    <script src="../../../js/jquery.sticky.js?1765202316"></script>
+    <script src="../../../js/featherlight.min.js?1765202316"></script>
+    <script src="../../../js/highlight.pack.js?1765202316"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../../js/modernizr.custom-3.6.0.js?1765185780"></script>
-    <script src="../../../js/learn.js?1765185780"></script>
-    <script src="../../../js/hugo-learn.js?1765185780"></script>
+    <script src="../../../js/modernizr.custom-3.6.0.js?1765202316"></script>
+    <script src="../../../js/learn.js?1765202316"></script>
+    <script src="../../../js/hugo-learn.js?1765202316"></script>
 
-    <link href="../../../mermaid/mermaid.css?1765185780" rel="stylesheet" />
-    <script src="../../../mermaid/mermaid.js?1765185780"></script>
+    <link href="../../../mermaid/mermaid.css?1765202316" rel="stylesheet" />
+    <script src="../../../mermaid/mermaid.js?1765202316"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

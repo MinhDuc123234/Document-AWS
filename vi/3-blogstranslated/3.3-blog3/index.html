@@ -15,21 +15,21 @@
     <title>Blog 3 :: Báo cáo thực tập</title>
 
     
-    <link href="../../../css/nucleus.css?1765185780" rel="stylesheet">
-    <link href="../../../css/fontawesome-all.min.css?1765185780" rel="stylesheet">
-    <link href="../../../css/hybrid.css?1765185780" rel="stylesheet">
-    <link href="../../../css/featherlight.min.css?1765185780" rel="stylesheet">
-    <link href="../../../css/perfect-scrollbar.min.css?1765185780" rel="stylesheet">
-    <link href="../../../css/auto-complete.css?1765185780" rel="stylesheet">
-    <link href="../../../css/atom-one-dark-reasonable.css?1765185780" rel="stylesheet">
-    <link href="../../../css/theme.css?1765185780" rel="stylesheet">
-    <link href="../../../css/hugo-theme.css?1765185780" rel="stylesheet">
+    <link href="../../../css/nucleus.css?1765202316" rel="stylesheet">
+    <link href="../../../css/fontawesome-all.min.css?1765202316" rel="stylesheet">
+    <link href="../../../css/hybrid.css?1765202316" rel="stylesheet">
+    <link href="../../../css/featherlight.min.css?1765202316" rel="stylesheet">
+    <link href="../../../css/perfect-scrollbar.min.css?1765202316" rel="stylesheet">
+    <link href="../../../css/auto-complete.css?1765202316" rel="stylesheet">
+    <link href="../../../css/atom-one-dark-reasonable.css?1765202316" rel="stylesheet">
+    <link href="../../../css/theme.css?1765202316" rel="stylesheet">
+    <link href="../../../css/hugo-theme.css?1765202316" rel="stylesheet">
     
-    <link href="../../../css/theme-workshop.css?1765185780" rel="stylesheet">
+    <link href="../../../css/theme-workshop.css?1765202316" rel="stylesheet">
     
     
 
-    <script src="../../../js/jquery-3.3.1.min.js?1765185780"></script>
+    <script src="../../../js/jquery-3.3.1.min.js?1765202316"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -88,14 +88,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../../js/lunr.min.js?1765185780"></script>
-<script type="text/javascript" src="../../../js/auto-complete.js?1765185780"></script>
+<script type="text/javascript" src="../../../js/lunr.min.js?1765202316"></script>
+<script type="text/javascript" src="../../../js/auto-complete.js?1765202316"></script>
 <script type="text/javascript">
     
-        var baseurl = "https:\/\/github.com\/MinhDuc123234\/Document-AWS-.git\/\/vi";
+        var baseurl = "https:\/\/minhduc123234.github.io\/Document-AWS\/\/vi";
     
 </script>
-<script type="text/javascript" src="../../../js/search.js?1765185780"></script>
+<script type="text/javascript" src="../../../js/search.js?1765202316"></script>
  
   </div>
 
@@ -739,14 +739,14 @@
                        
                 <option
                   id="en"
-                  value="https://github.com/MinhDuc123234/Document-AWS-.git/en/3-blogstranslated/3.3-blog3/"
+                  value="https://minhduc123234.github.io/Document-AWS/en/3-blogstranslated/3.3-blog3/"
                 >
                   English
                 </option>
                             
                 <option
                   id="vi"
-                  value="https://github.com/MinhDuc123234/Document-AWS-.git/vi/3-blogstranslated/3.3-blog3/"
+                  value="https://minhduc123234.github.io/Document-AWS/vi/3-blogstranslated/3.3-blog3/"
                   selected
                 >
                   Tiếng Việt
@@ -915,8 +915,12 @@
 <p>Trước đây, việc chia sẻ các pipeline OpenSearch Ingestion giữa các tài khoản yêu cầu các nhóm phải sử dụng các tính năng của virtual private cloud (VPC) để chia sẻ quyền truy cập. Ví dụ, các nhóm có thể sử dụng VPC peering, vốn không phải lúc nào cũng khả thi, hoặc <a href="https://aws.amazon.com/transit-gateway/">AWS Transit Gateway</a>. Các tính năng ingestion đa tài khoản mới trong OpenSearch Ingestion có thể đơn giản hóa việc triển khai của bạn và giảm chi phí cho việc chia sẻ pipeline.</p>
 <p><strong>Tổng quan về giải pháp</strong><br>
 Hãy cùng nhìn cách chia sẻ một pipeline từ một tài khoản logging trung tâm với hai tài khoản phát triển khác (A và B). Tài khoản logging trung tâm có thể tạo một pipeline OpenSearch Ingestion bằng cách sử dụng một nguồn dạng push, ví dụ như HTTP. Sau khi tạo pipeline, một thành viên của nhóm logging trung tâm có thể cấp quyền truy cập cho các nhóm khác. Họ có thể sử dụng một resource policy cung cấp quyền cho hai tài khoản nhóm còn lại để tạo các endpoint của pipeline. Sau khi thực hiện thay đổi này, pipeline OpenSearch Ingestion sẽ có sẵn để các nhóm khác sử dụng.</p>
-<p>Sơ đồ dưới đây minh họa cấu trúc này.<br>
-<img src="#ZgotmplZ" alt=""></p>
+<p>Sơ đồ dưới đây minh họa cấu trúc này.</p>
+<p align="center">
+  <img src="../../../images/3-BlogsTranslated/blog3_1.jpg" alt="Picture 1" />
+  <br/>
+  <strong style="font-size: 18px;">Figure 1</strong>
+</p>
 <p>Trong các phần tiếp theo, chúng sẽ minh họa cách triển khai giải pháp này.</p>
 <h3 id="các-điều-kiện-tiên-quyết-prerequisites"><strong>Các điều kiện tiên quyết (Prerequisites)</strong></h3>
 <p>Trước hết, tài khoản logging trung tâm phải có một VPC với hai tùy chọn được bật:</p>
@@ -959,7 +963,11 @@ Hãy cùng nhìn cách chia sẻ một pipeline từ một tài khoản logging 
 </span></span><span style="display:flex;"><span>  ]
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>Bảng điều khiển OpenSearch Ingestion giúp việc tạo các policy này trở nên đơn giản, như minh họa trong ảnh chụp màn hình sau.</p>
-<p><img src="#ZgotmplZ" alt=""></p>
+<p align="center">
+  <img src="../../../images/3-BlogsTranslated/blog3_2.gif" alt="Picture 1" />
+  <br/>
+  <strong style="font-size: 18px;">Figure 2</strong>
+</p>
 <h3 id="tạo-pipeline-endpoint"><strong>Tạo pipeline endpoint</strong></h3>
 <p>Bây giờ khi tài khoản logging trung tâm đã chia sẻ quyền trên pipeline của họ, các tài khoản phát triển có thể tạo pipeline endpoint. Một pipeline endpoint là một kết nối từ một VPC đến một pipeline OpenSearch Ingestion.</p>
 <p>Các tài khoản phát triển chịu trách nhiệm tạo các pipeline endpoint trong các VPC mà họ muốn kết nối từ đó. Họ tạo endpoint này trong các subnet cần thiết và cung cấp một security group. Security group này phải có một inbound rule cho phép truy cập cổng HTTPS qua cổng 443 từ bất kỳ nguồn nào mà các tài khoản phát triển cần để ingestion log.</p>
@@ -968,7 +976,11 @@ Hãy cùng nhìn cách chia sẻ một pipeline từ một tài khoản logging 
 </span></span><span style="display:flex;"><span>--<span style="color:#ae81ff">pipeline-arn arn:aws:osis:us-west-2:123456789012:pipeline/central-logging \</span>
 </span></span><span style="display:flex;"><span>--<span style="color:#ae81ff">vpc-options &#39;{&#34;SubnetIds&#34;:[&#34;subnet-123456789012345678&#34;,&#34;subnet-012345678912345678&#34;],&#34;SecurityGroupIds&#34;:[&#34;sg-123456789012345678&#34;]}&#39;</span>
 </span></span></code></pre></div><p>Nhóm phát triển A cũng có thể sử dụng bảng điều khiển (OpenSearch Ingestion console) để tạo pipeline endpoint.</p>
-<p><img src="#ZgotmplZ" alt=""></p>
+<p align="center">
+  <img src="../../../images/3-BlogsTranslated/blog3_3.gif" alt="Picture 1" />
+  <br/>
+  <strong style="font-size: 18px;">Figure 3</strong>
+</p>
 <p>Sau khi thực hiện thay đổi này, VPC của nhóm phát triển A sẽ có một pipeline endpoint. Pipeline endpoint này hiện cho phép ingestion dữ liệu vào central logging pipeline. Giờ đây, các <a href="http://aws.amazon.com/ec2">Amazon Elastic Compute Cloud</a>  (Amazon EC2) instances,<a href="http://aws.amazon.com/ecs">Amazon Elastic Container Service</a>  (Amazon ECS) tasks, Kubernetes pods, và các workload tính toán khác chạy trong VPC có thể ingestion dữ liệu log của chúng vào pipeline bằng các công cụ như FluentBit.</p>
 <p>Đồng thời hoặc sau đó, nhóm phát triển B cũng có thể tạo một pipeline endpoint. Nhóm này sẽ tạo endpoint cho VPC riêng của họ.</p>
 <p>Sau bước này, pipeline sẽ có hai pipeline endpoints, vì vậy cả hai nhóm đều có thể ingestion dữ liệu log của họ vào central logging VPC.</p>
@@ -1597,19 +1609,19 @@ Hãy cùng nhìn cách chia sẻ một pipeline từ một tài khoản logging 
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../../js/clipboard.min.js?1765185780"></script>
-    <script src="../../../js/perfect-scrollbar.min.js?1765185780"></script>
-    <script src="../../../js/perfect-scrollbar.jquery.min.js?1765185780"></script>
-    <script src="../../../js/jquery.sticky.js?1765185780"></script>
-    <script src="../../../js/featherlight.min.js?1765185780"></script>
-    <script src="../../../js/highlight.pack.js?1765185780"></script>
+    <script src="../../../js/clipboard.min.js?1765202316"></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1765202316"></script>
+    <script src="../../../js/perfect-scrollbar.jquery.min.js?1765202316"></script>
+    <script src="../../../js/jquery.sticky.js?1765202316"></script>
+    <script src="../../../js/featherlight.min.js?1765202316"></script>
+    <script src="../../../js/highlight.pack.js?1765202316"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../../js/modernizr.custom-3.6.0.js?1765185780"></script>
-    <script src="../../../js/learn.js?1765185780"></script>
-    <script src="../../../js/hugo-learn.js?1765185780"></script>
+    <script src="../../../js/modernizr.custom-3.6.0.js?1765202316"></script>
+    <script src="../../../js/learn.js?1765202316"></script>
+    <script src="../../../js/hugo-learn.js?1765202316"></script>
 
-    <link href="../../../mermaid/mermaid.css?1765185780" rel="stylesheet" />
-    <script src="../../../mermaid/mermaid.js?1765185780"></script>
+    <link href="../../../mermaid/mermaid.css?1765202316" rel="stylesheet" />
+    <script src="../../../mermaid/mermaid.js?1765202316"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
