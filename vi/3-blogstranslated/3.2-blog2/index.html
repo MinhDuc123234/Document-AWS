@@ -1,0 +1,2006 @@
+<!DOCTYPE html>
+<html lang="vi" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.151.0">
+    <meta
+  name="description"
+  content=""
+/>
+<meta name="author" content="thienlh@thienlu.com" />
+
+    <link rel="icon" href="../../../images/favicon.png" type="image/png">
+
+    <title>Blog 2 :: Báo cáo thực tập</title>
+
+    
+    <link href="../../../css/nucleus.css?1765184658" rel="stylesheet">
+    <link href="../../../css/fontawesome-all.min.css?1765184658" rel="stylesheet">
+    <link href="../../../css/hybrid.css?1765184658" rel="stylesheet">
+    <link href="../../../css/featherlight.min.css?1765184658" rel="stylesheet">
+    <link href="../../../css/perfect-scrollbar.min.css?1765184658" rel="stylesheet">
+    <link href="../../../css/auto-complete.css?1765184658" rel="stylesheet">
+    <link href="../../../css/atom-one-dark-reasonable.css?1765184658" rel="stylesheet">
+    <link href="../../../css/theme.css?1765184658" rel="stylesheet">
+    <link href="../../../css/hugo-theme.css?1765184658" rel="stylesheet">
+    
+    <link href="../../../css/theme-workshop.css?1765184658" rel="stylesheet">
+    
+    
+
+    <script src="../../../js/jquery-3.3.1.min.js?1765184658"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+
+  </head>
+  <body class="" data-url="../../../vi/3-blogstranslated/3.2-blog2/">
+    <nav
+  id="sidebar"
+  class="showVisitedLinks"
+>
+   
+  <div id="header-wrapper">
+    <div id="header"><a id="logo" href="../../../">
+  <svg
+    id="Layer_1"
+    data-name="Layer 1"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 60 30"
+    width="30%"
+  >
+    <defs>
+      <style>
+        .cls-1 {
+          fill: #fff;
+        }
+        .cls-2 {
+          fill: #f90;
+          fill-rule: evenodd;
+        }
+      </style>
+    </defs>
+    <title>AWS-Logo_White-Color</title>
+    <path
+      class="cls-1"
+      d="M14.09,10.85a4.7,4.7,0,0,0,.19,1.48,7.73,7.73,0,0,0,.54,1.19.77.77,0,0,1,.12.38.64.64,0,0,1-.32.49l-1,.7a.83.83,0,0,1-.44.15.69.69,0,0,1-.49-.23,3.8,3.8,0,0,1-.6-.77q-.25-.42-.51-1a6.14,6.14,0,0,1-4.89,2.3,4.54,4.54,0,0,1-3.32-1.19,4.27,4.27,0,0,1-1.22-3.2A4.28,4.28,0,0,1,3.61,7.75,6.06,6.06,0,0,1,7.69,6.46a12.47,12.47,0,0,1,1.76.13q.92.13,1.91.36V5.73a3.65,3.65,0,0,0-.79-2.66A3.81,3.81,0,0,0,7.86,2.3a7.71,7.71,0,0,0-1.79.22,12.78,12.78,0,0,0-1.79.57,4.55,4.55,0,0,1-.58.22l-.26,0q-.35,0-.35-.52V2a1.09,1.09,0,0,1,.12-.58,1.2,1.2,0,0,1,.47-.35A10.88,10.88,0,0,1,5.77.32,10.19,10.19,0,0,1,8.36,0a6,6,0,0,1,4.35,1.35,5.49,5.49,0,0,1,1.38,4.09ZM7.34,13.38a5.36,5.36,0,0,0,1.72-.31A3.63,3.63,0,0,0,10.63,12,2.62,2.62,0,0,0,11.19,11a5.63,5.63,0,0,0,.16-1.44v-.7a14.35,14.35,0,0,0-1.53-.28,12.37,12.37,0,0,0-1.56-.1,3.84,3.84,0,0,0-2.47.67A2.34,2.34,0,0,0,5,11a2.35,2.35,0,0,0,.61,1.76A2.4,2.4,0,0,0,7.34,13.38Zm13.35,1.8a1,1,0,0,1-.64-.16,1.3,1.3,0,0,1-.35-.65L15.81,1.51a3,3,0,0,1-.15-.67.36.36,0,0,1,.41-.41H17.7a1,1,0,0,1,.65.16,1.4,1.4,0,0,1,.33.65l2.79,11,2.59-11A1.17,1.17,0,0,1,24.39.6a1.1,1.1,0,0,1,.67-.16H26.4a1.1,1.1,0,0,1,.67.16,1.17,1.17,0,0,1,.32.65L30,12.39,32.88,1.25A1.39,1.39,0,0,1,33.22.6a1,1,0,0,1,.65-.16h1.54a.36.36,0,0,1,.41.41,1.36,1.36,0,0,1,0,.26,3.64,3.64,0,0,1-.12.41l-4,12.86a1.3,1.3,0,0,1-.35.65,1,1,0,0,1-.64.16H29.25a1,1,0,0,1-.67-.17,1.26,1.26,0,0,1-.32-.67L25.67,3.64,23.11,14.34a1.26,1.26,0,0,1-.32.67,1,1,0,0,1-.67.17Zm21.36.44a11.28,11.28,0,0,1-2.56-.29,7.44,7.44,0,0,1-1.92-.67,1,1,0,0,1-.61-.93v-.84q0-.52.38-.52a.9.9,0,0,1,.31.06l.42.17a8.77,8.77,0,0,0,1.83.58,9.78,9.78,0,0,0,2,.2,4.48,4.48,0,0,0,2.43-.55,1.76,1.76,0,0,0,.86-1.57,1.61,1.61,0,0,0-.45-1.16A4.29,4.29,0,0,0,43,9.22l-2.41-.76A5.15,5.15,0,0,1,38,6.78a3.94,3.94,0,0,1-.83-2.41,3.7,3.7,0,0,1,.45-1.85,4.47,4.47,0,0,1,1.19-1.37A5.27,5.27,0,0,1,40.51.29,7.4,7.4,0,0,1,42.6,0a8.87,8.87,0,0,1,1.12.07q.57.07,1.08.19t.95.26a4.27,4.27,0,0,1,.7.29,1.59,1.59,0,0,1,.49.41.94.94,0,0,1,.15.55v.79q0,.52-.38.52a1.76,1.76,0,0,1-.64-.2,7.74,7.74,0,0,0-3.2-.64,4.37,4.37,0,0,0-2.21.47,1.6,1.6,0,0,0-.79,1.48,1.58,1.58,0,0,0,.49,1.18,4.94,4.94,0,0,0,1.83.92L44.55,7a5.08,5.08,0,0,1,2.57,1.6A3.76,3.76,0,0,1,47.9,11a4.21,4.21,0,0,1-.44,1.93,4.4,4.4,0,0,1-1.21,1.47,5.43,5.43,0,0,1-1.85.93A8.25,8.25,0,0,1,42.05,15.62Z"
+    ></path>
+    <path
+      class="cls-2"
+      d="M45.19,23.81C39.72,27.85,31.78,30,25,30A36.64,36.64,0,0,1,.22,20.57c-.51-.46-.06-1.09.56-.74A49.78,49.78,0,0,0,25.53,26.4,49.23,49.23,0,0,0,44.4,22.53C45.32,22.14,46.1,23.14,45.19,23.81Z"
+    ></path>
+    <path
+      class="cls-2"
+      d="M47.47,21.21c-.7-.9-4.63-.42-6.39-.21-.53.06-.62-.4-.14-.74,3.13-2.2,8.27-1.57,8.86-.83s-.16,5.89-3.09,8.35c-.45.38-.88.18-.68-.32C46.69,25.8,48.17,22.11,47.47,21.21Z"
+    ></path>
+  </svg>
+</a>
+</div>
+     <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="../../../js/lunr.min.js?1765184658"></script>
+<script type="text/javascript" src="../../../js/auto-complete.js?1765184658"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/minhduc123234.github.io\/Proposal-storm-Prediction\/\/vi";
+    
+</script>
+<script type="text/javascript" src="../../../js/search.js?1765184658"></script>
+ 
+  </div>
+
+  <div class="highlightable">
+    <ul class="topics">
+               
+<li
+  data-nav-id="/vi/1-worklog/"
+  title="Nhật ký công việc"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/">
+     <b> 1. </b> Nhật ký công việc 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/1-worklog/1.1-week1/"
+  title="Worklog Tuần 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.1-week1/">
+     <b> 1.1. </b> Worklog Tuần 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.2-week2/"
+  title="Worklog Tuần 2"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.2-week2/">
+     <b> 1.2. </b> Worklog Tuần 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.3-week3/"
+  title="Worklog Tuần 3"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.3-week3/">
+     <b> 1.3. </b> Worklog Tuần 3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.4-week4/"
+  title="Worklog Tuần 4"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.4-week4/">
+     <b> 1.4. </b> Worklog Tuần 4 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.5-week5/"
+  title="Worklog Tuần 5"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.5-week5/">
+     <b> 1.5. </b> Worklog Tuần 5 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.6-week6/"
+  title="Worklog Tuần 6"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.6-week6/">
+     <b> 1.6. </b> Worklog Tuần 6 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.7-week7/"
+  title="Worklog Tuần 7"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.7-week7/">
+     <b> 1.7. </b> Worklog Tuần 7 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.8-week8/"
+  title="Worklog Tuần 8"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.8-week8/">
+     <b> 1.8. </b> Worklog Tuần 8 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.9-week9/"
+  title="Worklog Tuần 9"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.9-week9/">
+     <b> 1.9. </b> Worklog Tuần 9 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.10-week10/"
+  title="Worklog Tuần 10"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.10-week10/">
+     <b> 1.10. </b> Worklog Tuần 10 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.11-week11/"
+  title="Worklog Tuần 11"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.11-week11/">
+     <b> 1.11. </b> Worklog Tuần 11 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.12-week12/"
+  title="Worklog Tuần 12"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.12-week12/">
+     <b> 1.12 </b> Worklog Tuần 12 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/vi/2-proposal/"
+  title="Bản đề xuất"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/2-proposal/">
+     <b> 2. </b> Bản đề xuất 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+           
+<li
+  data-nav-id="/vi/3-blogstranslated/"
+  title="Các bài blogs đã dịch"
+  class="dd-item 
+        parent
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/">
+     <b> 3. </b> Các bài blogs đã dịch 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.1-blog1/"
+  title="Blog 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.1-blog1/">
+     <b> 3.1. </b> Blog 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.2-blog2/"
+  title="Blog 2"
+  class="dd-item 
+        
+        active
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.2-blog2/">
+     <b> 3.2. </b> Blog 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.3-blog3/"
+  title="Blog 3"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.3-blog3/">
+     <b> 3.3. </b> Blog 3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/vi/4-eventparticipated/"
+  title="Các events đã tham gia"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/4-eventparticipated/">
+     <b> 4. </b> Các events đã tham gia 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/4-eventparticipated/4.1-event1/"
+  title="Event 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/4-eventparticipated/4.1-event1/">
+     <b> 4.1. </b> Event 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/4-eventparticipated/4.2-event2/"
+  title="Event 2"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/4-eventparticipated/4.2-event2/">
+     <b> 4.2. </b> Event 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/vi/5-workshop/"
+  title="Workshop"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/">
+     <b> 5. </b> Workshop 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/5-workshop/5.1-workshop-overview/"
+  title="Giới thiệu"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.1-workshop-overview/">
+     <b> 5.1. </b> Giới thiệu 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.2-data-preparation/"
+  title="Chuẩn Bị Dữ Liệu"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.2-data-preparation/">
+     <b> 5.2. </b> Chuẩn Bị Dữ Liệu 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.3-ml-model/"
+  title="Mô Hình Học Máy"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.3-ml-model/">
+     <b> 5.3. </b> Mô Hình Học Máy 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.4-frontback-end/5.4.1-frontend-architecture/"
+  title="Kiến Trúc Frontend"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.4-frontback-end/5.4.1-frontend-architecture/">
+     <b> 5.4.1 </b> Kiến Trúc Frontend 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.4-frontback-end/5.4.2-lambda-architecture/"
+  title="Kiến trúc Lambda"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.4-frontback-end/5.4.2-lambda-architecture/">
+     <b> 5.4.2 </b> Kiến trúc Lambda 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/5-workshop/5.4-frontback-end/5.4.2-lambda-architecture/5.4.2.2-fix-unicode-error-solution/"
+  title="Sửa lỗi Unicode"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.4-frontback-end/5.4.2-lambda-architecture/5.4.2.2-fix-unicode-error-solution/">
+     <b> 5.4.2.2 </b> Sửa lỗi Unicode 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.4-frontback-end/5.4.2-lambda-architecture/5.4.2.1-ai-model-integration/"
+  title="Tích Hợp AI"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.4-frontback-end/5.4.2-lambda-architecture/5.4.2.1-ai-model-integration/">
+     <b> 5.4.2.1 </b> Tích Hợp AI 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.4-frontback-end/5.4.2-lambda-architecture/5.4.2.3-lambda-deployment/"
+  title="Triển Khai Lamda"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.4-frontback-end/5.4.2-lambda-architecture/5.4.2.3-lambda-deployment/">
+     <b> 5.4.2.3 </b> Triển Khai Lamda 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.5-platform-api/"
+  title="Nền tảng API"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.5-platform-api/">
+     <b> 5.5. </b> Nền tảng API 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/vi/6-self-evaluation/"
+  title="Tự đánh giá"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/6-self-evaluation/">
+     <b> 6. </b> Tự đánh giá 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+           
+<li
+  data-nav-id="/vi/7-feedback/"
+  title="Chia sẻ, đóng góp ý kiến"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/7-feedback/">
+     <b> 7. </b> Chia sẻ, đóng góp ý kiến 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+    </ul>
+
+     
+    <section id="shortcuts">
+      <h3>
+        More
+      </h3>
+      <ul>
+        
+        <li>
+          <a class="padding" href="https://www.facebook.com/groups/awsstudygroupfcj/"
+            ><i class='fab fa-facebook'></i> AWS Study Group</a
+          >
+        </li>
+        
+      </ul>
+    </section>
+     
+    <section id="prefooter">
+      <hr />
+      <ul>
+        
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+            <div class="select-style">
+              <select id="select-language" onchange="location = this.value;">
+                       
+                <option
+                  id="en"
+                  value="https://minhduc123234.github.io/Proposal-storm-Prediction/en/3-blogstranslated/3.2-blog2/"
+                >
+                  English
+                </option>
+                            
+                <option
+                  id="vi"
+                  value="https://minhduc123234.github.io/Proposal-storm-Prediction/vi/3-blogstranslated/3.2-blog2/"
+                  selected
+                >
+                  Tiếng Việt
+                </option>
+                   
+              </select>
+              <svg
+                version="1.1"
+                id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="255px"
+                height="255px"
+                viewBox="0 0 255 255"
+                style="enable-background: new 0 0 255 255"
+                xml:space="preserve"
+              >
+                <g>
+                  <g id="arrow-drop-down">
+                    <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+         
+        <li>
+          <a class="padding" href="#" data-clear-history-toggle=""
+            ><i class="fas fa-history fa-fw"></i> Clear History</a
+          >
+        </li>
+        
+      </ul>
+    </section>
+    
+    <section id="footer"><left>
+    
+    <b> Workshop</b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7920860&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Migrate" Alt="web counter" border="0" /></a> <br>
+    <b> <a href="https://cloudjourney.awsstudygroup.com/">Cloud Journey</a></b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7830807&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Total CLoud Journey" Alt="web counter" border="0" />
+
+</left>
+<left>
+    <br>
+    <br>
+    <b>Last Updated</b><br>
+    <i>
+        <span id="lastUpdated" style="color:orange;"></span>
+    </i>
+
+    <script>
+        
+        const today = new Date();
+        
+        const formattedDate = today.toLocaleDateString('en-GB');
+        
+        document.getElementById('lastUpdated').textContent = formattedDate;
+    </script>
+</left>
+<left>
+    <br>
+    <br>
+    <b> Team </b> <br>
+
+    <i> <a href="https://www.facebook.com/groups/660548818043427" style="color:orange">First Cloud Journey </a> <br>
+
+    </i>
+</left>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script></section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='../../../vi/'>Báo cáo thực tập</a> > <a href='../../../vi/3-blogstranslated/'>Các bài blogs đã dịch</a> > Blog 2
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+  <div class="wrapper"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#tính-năng-cấp-quyền-truy-cập-dữ-liệu-trong-các-hệ-thống-rag"><strong>Tính năng cấp quyền truy cập dữ liệu trong các hệ thống RAG</strong></a></li>
+    <li><a href="#tổng-quan-về-việc-sử-dụng-rag"><strong>Tổng quan về việc sử dụng RAG</strong></a></li>
+    <li><a href="#tổng-quan-giải-pháp-s3-access-grants-với-bedrock-knowledge-bases"><strong>Tổng quan giải pháp: S3 Access Grants với Bedrock Knowledge Bases</strong></a>
+      <ul>
+        <li><a href="#trong-ví-dụ-sau-bạn-có-một-tổ-chức-acme-muốn-tạo-một-chatbot-ai-sinh-cho-nhân-viên-của-họ-có-nhiều-đội-nhóm-trong-tổ-chức-marketing-sales-hr-và-it-làm-việc-trên-các-dự-án-trong-toàn-bộ-tổ-chức-bạn-có-năm-người-dùng-các-principal-truy-cập-ứng-dụng-với-quyền-nhóm-như-sau">Trong ví dụ sau, bạn có một tổ chức ACME muốn tạo một chatbot AI sinh cho nhân viên của họ. Có nhiều đội nhóm trong tổ chức (Marketing, Sales, HR và IT) làm việc trên các dự án trong toàn bộ tổ chức. Bạn có năm người dùng (các principal truy cập ứng dụng) với quyền nhóm như sau:</a></li>
+      </ul>
+    </li>
+    <li><a href="#bước-1-người-dùng-sử-dụng-idp-để-đăng-nhập-vào-ứng-dụng-ai-sinh"><strong>Bước 1: Người dùng sử dụng IdP để đăng nhập vào ứng dụng AI sinh</strong></a></li>
+    <li><a href="#bước-2-trao-đổi-token-với-iam-identity-center"><strong>Bước 2: Trao đổi token với IAM Identity Center</strong></a></li>
+    <li><a href="#sau-khi-bob-được-xác-thực-và-chuyển-token-của-mình-cho-ứng-dụng-ai-sinh-ứng-dụng-sẽ-trao-đổi-identity-token-từ-idp-với-identity-token-của-iam-identity-center-và-lấy-thông-tin-xác-thực-tạm-thời-temporary-credentials-thay-mặt-cho-bob-bạn-sẽ-tạo-một-hàm-python-có-tên-assume_role-để-truyền-nhiều-biến-khác-nhau-cho-phép-bob-giả-định-vai-trò-assume-role-trong-aws">Sau khi Bob được xác thực và chuyển token của mình cho ứng dụng AI sinh, ứng dụng sẽ trao đổi identity token từ IdP với identity token của IAM Identity Center và lấy thông tin xác thực tạm thời (temporary credentials) thay mặt cho Bob. Bạn sẽ tạo một hàm Python có tên assume_role để truyền nhiều biến khác nhau, cho phép Bob giả định vai trò (assume role) trong AWS:</a></li>
+    <li><a href="#bước-3-truy-xuất-phạm-vi-cấp-quyền-của-người-gọi-caller-grant-scopes--tiếp-theo-bạn-cần-truy-xuất-những-gì-bob-được-phép-truy-cập-trong-nguồn-dữ-liệu-bằng-cách-sử-dụng-s3-access-grants-trong-ví-dụ-này-bạn-cần-xác-thực-dữ-liệu-mà-bob-được-cấp-quyền-truy-cập-với-nguồn-dữ-liệu-chứ-không-phải-với-từng-đối-tượng-s3-cụ-thể"><strong>Bước 3: Truy xuất phạm vi cấp quyền của người gọi (caller grant scopes)</strong> Tiếp theo, bạn cần truy xuất những gì <strong>Bob được phép truy cập</strong> trong nguồn dữ liệu bằng cách sử dụng <strong>S3 Access Grants</strong>. Trong ví dụ này, bạn cần <strong>xác thực dữ liệu mà Bob được cấp quyền truy cập với nguồn dữ liệu</strong>, chứ không phải với từng đối tượng S3 cụ thể.</a></li>
+    <li><a href="#bước-4-kiểm-tra-phạm-vi-cấp-quyền-của-người-gọi-check-caller-grant-scopes"><strong>Bước 4: Kiểm tra phạm vi cấp quyền của người gọi (Check caller grant scopes)</strong></a>
+      <ul>
+        <li></li>
+        <li><a href="#giới-thiệu-về-các-tác-giả"><strong>Giới thiệu về các tác giả</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Blog 2
+            </h1>
+          
+
+        
+
+
+
+	<h2 id="tính-năng-cấp-quyền-truy-cập-dữ-liệu-trong-các-hệ-thống-rag"><strong>Tính năng cấp quyền truy cập dữ liệu trong các hệ thống RAG</strong></h2>
+<p><em>Bởi <strong>Riggs Goodman III</strong>, ngày 18 tháng 9 năm 2025.|Trong <a href="https://aws.amazon.com/blogs/security/category/learning-levels/advanced-300/">Advanced (300)</a>, <a href="https://aws.amazon.com/blogs/security/category/artificial-intelligence/amazon-machine-learning/amazon-bedrock/">Amazon Bedrock</a>, <a href="https://aws.amazon.com/blogs/security/category/post-types/best-practices/">Best Practices</a>, <a href="https://aws.amazon.com/blogs/security/category/artificial-intelligence/generative-ai/">Generative AI</a>, <a href="https://aws.amazon.com/blogs/security/category/security-identity-compliance/">Security, Identity, &amp; Compliance</a></em></p>
+<p>Các tổ chức hiện nay ngày càng sử dụng các mô hình ngôn ngữ lớn (LLM) để mang đến những hình thức tương tác mới với khách hàng thông qua chatbot được hỗ trợ bởi trí tuệ nhân tạo sinh (generative AI), trợ lý ảo và khả năng tìm kiếm thông minh. Để nâng cao các tương tác này, các tổ chức đang áp dụng phương pháp Retrieval-Augmented Generation (RAG) nhằm kết hợp dữ liệu độc quyền, kiến thức chuyên ngành và tài liệu nội bộ để cung cấp các phản hồi chính xác và có ngữ cảnh hơn. Với RAG, các LLM sử dụng một kho tri thức bên ngoài dựa trên vector store để kết hợp các dữ liệu kiến thức cụ thể trước khi tạo phản hồi.</p>
+<p>Khách hàng của chúng tôi cho biết họ lo ngại rằng việc thêm ngữ cảnh bổ sung vào prompt có thể dẫn đến rò rỉ thông tin nhạy cảm cho các principal (người dùng hoặc ứng dụng) có thể tồn tại trong một số công cụ này hoặc cho dữ liệu phi cấu trúc trong kho tri thức. Như đã đề cập trong các bài viết trước (<a href="https://aws.amazon.com/blogs/security/implement-effective-data-authorization-mechanisms-to-secure-your-data-used-in-generative-ai-applications/">Part 1</a>, <a href="https://aws.amazon.com/blogs/security/implement-effective-data-authorization-mechanisms-to-secure-your-data-used-in-generative-ai-applications-part-2/">Part 2</a>), LLM nên được xem là các thực thể không đáng tin cậy vì chúng không thực hiện kiểm soát quyền truy cập (authorization) như một phần của phản hồi. Một mô hình tư duy hợp lý cho các tổ chức là giả định rằng bất kỳ dữ liệu nào được gửi vào LLM trong prompt đều có thể được trả lại cho principal. Với các công cụ (API mà LLM có thể gọi để tương tác với các tài nguyên bên ngoài), bạn có thể truyền mã định danh (identity token) của principal vào công cụ để xác định những gì principal được phép truy cập và những hành động nào được cho phép. Các khả năng trên nhiều cơ sở dữ liệu vector — bao gồm các bộ lọc metadata và việc đồng bộ hóa thông tin danh tính giữa nguồn dữ liệu và kho tri thức — giúp cải thiện kết quả từ kho tri thức và cung cấp khả năng lọc cơ bản. Tuy nhiên, điều này không cung cấp khả năng cấp quyền mạnh mẽ dựa trên nguồn dữ liệu như nguồn xác thực duy nhất (source of truth) mà một số khách hàng đang tìm kiếm.</p>
+<p>Trong bài viết này, tôi sẽ trình bày một mô hình kiến trúc để cung cấp cơ chế cấp quyền mạnh mẽ cho các kết quả trả về từ kho tri thức, kèm theo ví dụ minh họa sử dụng <a href="https://aws.amazon.com/s3/features/access-grants/">Amazon S3 Access Grants</a> với <a href="https://aws.amazon.com/bedrock/knowledge-bases/">Amazon Bedrock Knowledge Bases</a>. Tôi cũng sẽ đưa ra một số điểm cần xem xét khi triển khai các mô hình kiến trúc tương tự với các nguồn dữ liệu khác.</p>
+<h2 id="tổng-quan-về-việc-sử-dụng-rag"><strong>Tổng quan về việc sử dụng RAG</strong></h2>
+<p>Kiến trúc RAG có nhiều điểm tương đồng với các công cụ tìm kiếm, nhưng cũng có một số khác biệt quan trọng. Mặc dù cả hai đều sử dụng các nguồn dữ liệu được lập chỉ mục để tìm thông tin liên quan, nhưng cách tiếp cận trong việc truy cập dữ liệu của chúng lại khác nhau. Các công cụ tìm kiếm cung cấp liên kết đến các nguồn thông tin, yêu cầu người dùng phải truy cập trực tiếp vào nguồn dữ liệu gốc dựa trên quyền được cấp cho họ. Quy trình này được minh họa trong Hình 1.<br>
+<img src="#ZgotmplZ" alt=""></p>
+<p><em>Hình 1: Cấu trúc principal (trong ví dụ này là Người dùng) truy cập vào nguồn dữ liệu sau khi công cụ tìm kiếm trả về kết quả.</em></p>
+<p>Không giống như các công cụ tìm kiếm, các hệ thống RAG trả về kết quả từ cơ sở dữ liệu vector trực tiếp thông qua LLM, bỏ qua bước kiểm tra quyền truy cập tại nguồn dữ liệu gốc. Mặc dù việc lọc theo metadata có thể giúp kiểm soát quyền truy cập, nhưng cách tiếp cận này tồn tại hai thách thức chính. Thứ nhất, các cơ sở dữ liệu vector chỉ đồng bộ định kỳ, nên các thay đổi về quyền truy cập trong nguồn dữ liệu không được cập nhật ngay lập tức. Thứ hai, với các quyền danh tính phức tạp — nơi một principal có thể thuộc hàng trăm nhóm — việc lọc kết quả một cách chính xác trở nên rất khó khăn. Điều này khiến lọc theo metadata không đủ cho những tổ chức yêu cầu cơ chế cấp quyền chặt chẽ hơn. Quy trình này được minh họa trong Hình 2.</p>
+<p><img src="#ZgotmplZ" alt=""></p>
+<p><em>Hình 2: Một ứng dụng truy cập dữ liệu trong cơ sở dữ liệu vector.</em></p>
+<p>Để triển khai cơ chế cấp quyền mạnh mẽ cho việc truy cập dữ liệu trong kho tri thức, hãy xác minh quyền truy cập trực tiếp tại nguồn dữ liệu thay vì dựa vào các hệ thống trung gian. Khi sử dụng ví dụ về công cụ tìm kiếm, việc xác minh quyền truy cập diễn ra khi truy xuất kết quả thực tế từ nguồn dữ liệu, không phải trong quá trình tìm kiếm ban đầu. Đối với các cơ sở dữ liệu vector, ứng dụng AI sinh sẽ xác thực quyền truy cập bằng cách gửi yêu cầu cấp quyền đến nguồn dữ liệu trước khi truy xuất dữ liệu. Cách này giúp đảm bảo rằng nguồn dữ liệu, nơi duy trì các quy tắc kiểm soát truy cập chính thống, sẽ xác định xem principal có quyền truy cập vào các đối tượng cụ thể hay không. Việc kiểm tra cấp quyền theo thời gian thực này đồng nghĩa với việc các thay đổi về quyền truy cập được phản ánh ngay lập tức khi truy cập vào nguồn dữ liệu. Mẫu cấp quyền này tương tự như cách  <a href="https://aws.amazon.com/lake-formation">AWS Lake Formation</a> quản lý quyền truy cập đối với dữ liệu có cấu trúc. Lake Formation đánh giá quyền khi một principal yêu cầu truy cập vào cơ sở dữ liệu hoặc bảng, cấp hoặc từ chối quyền truy cập dựa trên quyền đã được định nghĩa cho principal. Bạn có thể triển khai các cơ chế kiểm soát quyền tương tự cho kết quả của cơ sở dữ liệu vector trước khi cung cấp ngữ cảnh đó cho các mô hình ngôn ngữ lớn.</p>
+<p>Hãy cùng xem xét một giải pháp ví dụ sử dụng S3 Access Grants kết hợp với Amazon Bedrock Knowledge Bases trong trường hợp thực tế.</p>
+<h2 id="tổng-quan-giải-pháp-s3-access-grants-với-bedrock-knowledge-bases"><strong>Tổng quan giải pháp: S3 Access Grants với Bedrock Knowledge Bases</strong></h2>
+<h3 id="trong-ví-dụ-sau-bạn-có-một-tổ-chức-acme-muốn-tạo-một-chatbot-ai-sinh-cho-nhân-viên-của-họ-có-nhiều-đội-nhóm-trong-tổ-chức-marketing-sales-hr-và-it-làm-việc-trên-các-dự-án-trong-toàn-bộ-tổ-chức-bạn-có-năm-người-dùng-các-principal-truy-cập-ứng-dụng-với-quyền-nhóm-như-sau">Trong ví dụ sau, bạn có một tổ chức ACME muốn tạo một chatbot AI sinh cho nhân viên của họ. Có nhiều đội nhóm trong tổ chức (Marketing, Sales, HR và IT) làm việc trên các dự án trong toàn bộ tổ chức. Bạn có năm người dùng (các principal truy cập ứng dụng) với quyền nhóm như sau:</h3>
+<ul>
+<li>Alice: Marketing Team</li>
+<li>Bob: Sales Team, Project A Team</li>
+<li>Carol: HR Team, Project B Team</li>
+<li>Dave: IT Support, Project C Team</li>
+<li>Eve: Marketing Team</li>
+</ul>
+<p>Mỗi principal sẽ được truy cập vào thư mục dự án (ví dụ <code>/projects/projectA</code>) hoặc thư mục phòng ban tương ứng (ví dụ <code>departments/marketing/</code>). Marketing cũng sẽ có quyền truy cập mọi thứ trong thư mục <code>projects</code> (<code>/projects/*</code>) trừ khi đó là các tệp được coi là rất mật (highly confidential). Để đánh dấu các tệp của Project B là rất mật, bạn sẽ thêm thẻ metadata cho các đối tượng trong tiền tố Project C với <code>classification = ‘highly confidential’</code>. Hình 3 cho thấy mối quan hệ giữa các principal và quyền truy cập vào các thư mục khác nhau trong nguồn dữ liệu. Ví dụ, chỉ có Carol được truy cập dữ liệu rất mật trong thư mục Project B.</p>
+<p><img src="#ZgotmplZ" alt=""><br>
+<em>Hình 3: Quyền nhóm của tổ chức</em></p>
+<p>Để cấp quyền truy cập cho từng principal đến các đối tượng trong kho tri thức, bạn sẽ sử dụng  <a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-grants.html">Amazon S3 Access Grants</a>. Bạn có thể tìm hiểu cách thiết lập S3 Access Grants trong  <a href="https://aws.amazon.com/blogs/storage/how-to-develop-a-user-facing-data-application-with-iam-identity-center-and-s3-access-grants/">Part 1</a> hoặc <a href="https://aws.amazon.com/blogs/storage/how-to-develop-a-user-facing-data-application-with-iam-identity-center-and-s3-access-grants-part-2/">Part 2</a> của loạt bài viết này.</p>
+<p>Trong AWS IAM Identity Center, bạn sẽ thêm từng người dùng vào nhóm tương ứng của họ. Ví dụ, Bob sẽ được thêm vào cả nhóm Sales Team và nhóm Project A Team, giống như minh họa trong Hình 3.</p>
+<p>Mỗi tiền tố (ví dụ <code>projectA/</code>, <code>marketing/</code>) sẽ chứa một tệp duy nhất cung cấp trạng thái của nhóm. Ngoài ra, với Project B, bạn cũng sẽ thêm tệp <code>status.txt.metadata.json</code> để gắn thẻ (tag) cho đối tượng là rất mật (highly confidential) vì đây là dự án của bộ phận HR.</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Project B status is as follows: Project B = Compensation Update STATUS = YELLOW Project completion = 50% Notes: we are tracking behind schedule. Need to pull more resources to get it completed by next month.</th>
+      </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+<p>Và tệp <strong>metadata.json</strong> sẽ có nội dung như sau:</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">{     &ldquo;metadataAttributes&rdquo; : {          &ldquo;classification&rdquo; : &ldquo;highly confidential&rdquo;     } }</th>
+      </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+<p>Sau khi kho tri thức và S3 Access Grants được cấu hình xong, bạn có thể bắt đầu kiểm tra cơ chế cấp quyền cho các phần dữ liệu (chunk) trong kho tri thức. Quy trình hoạt động của ứng dụng được mô tả như sau (như minh họa trong Hình 4):</p>
+<ol>
+<li>
+<p>Người dùng sử dụng nhà cung cấp danh tính (IdP) để đăng nhập vào ứng dụng AI sinh (các bước 1a, 1b và 1c).</p>
+</li>
+<li>
+<p>Ứng dụng AI sinh trao đổi token với IAM Identity Center và giả định vai trò (assume role) thay mặt cho người dùng (bước 2).</p>
+</li>
+<li>
+<p>Ứng dụng AI sinh gọi S3 Access Grants để lấy danh sách các quyền truy cập (grants) mà người dùng được phép sử dụng (bước 3).</p>
+</li>
+<li>
+<p>Người dùng gửi truy vấn đến ứng dụng AI sinh (bước 4).</p>
+</li>
+<li>
+<p>Ứng dụng AI sinh gửi truy vấn đến kho tri thức (bước 5).</p>
+</li>
+<li>
+<p>Ứng dụng AI sinh so sánh các phần dữ liệu (chunks) từ kho tri thức với phạm vi truy cập (scopes) mà người dùng được cấp quyền (bước 6).</p>
+</li>
+<li>
+<p>Chỉ những phạm vi mà người dùng được phép truy cập mới được chuyển tiếp đến LLM để tạo phản hồi (bước 7).</p>
+</li>
+<li>
+<p>Ứng dụng AI sinh sẽ lặp lại các bước 5–7 cho đến khi bạn muốn làm mới danh sách quyền truy cập (lặp lại bước 4) hoặc khi token hết hạn (lặp lại bước 3 và 4).</p>
+</li>
+</ol>
+<p><img src="#ZgotmplZ" alt=""></p>
+<p><em><strong>Hình 4: Luồng hoạt động của ứng dụng trong việc cấp quyền truy cập dữ liệu từ kho tri thức</strong></em></p>
+<p>Các phạm vi cấp quyền (grant scopes) được thể hiện trong bảng dưới đây:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Phạm vi cấp quyền (Grant scope)</th>
+          <th>Mã định danh cấp quyền (Grant ID)</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>s3:// amzn-s3-demo-bucket/departments/sales/*</td>
+          <td>edbd7575-0ba8-4837-8df1-07fe5d89f973 (sales group)</td>
+      </tr>
+      <tr>
+          <td>s3:// amzn-s3-demo-bucket/departments/it/*</td>
+          <td>a8f1d390-10d1-7037-7b27-c9fcf0b04441 (it group)</td>
+      </tr>
+      <tr>
+          <td>s3:// amzn-s3-demo-bucket/departments/marketing/*</td>
+          <td>28f1e3c0-8081-70fe-6b4f-531ae370e7fd (marketing group</td>
+      </tr>
+      <tr>
+          <td>s3:// amzn-s3-demo-bucket/departments/hr/*</td>
+          <td>38f11380-d011-70fb-261b-aa50d7edc1d5 (hr group)</td>
+      </tr>
+      <tr>
+          <td>s3:// amzn-s3-demo-bucket/projects/projectA/*</td>
+          <td>c84173b0-b071-70c5-3207-dadc1e6f76a9 (project A group)</td>
+      </tr>
+      <tr>
+          <td>s3:// amzn-s3-demo-bucket/projects/projectB/*</td>
+          <td>2871d3c0-6001-7073-baaf-62717f56b8d0 (project B group)</td>
+      </tr>
+      <tr>
+          <td>s3:// amzn-s3-demo-bucket/projects/projectC/*</td>
+          <td>f8a183b0-f001-707b-aa8e-1826ca04595e (project C group)</td>
+      </tr>
+      <tr>
+          <td>s3:// amzn-s3-demo-bucket/projects/*</td>
+          <td>28f1e3c0-8081-70fe-6b4f-531ae370e7fd (marketing group)</td>
+      </tr>
+  </tbody>
+</table>
+<p>Trong ví dụ này, bạn có thể sử dụng vai trò của Bob để minh họa cách hoạt động của việc cấp quyền cho từng phần dữ liệu (chunk authorization). Khi bạn gọi đến kho tri thức mà không thực hiện bất kỳ bước cấp quyền dữ liệu nào, bạn sẽ nhận được phản hồi như sau khi đặt câu hỏi “Tình trạng dự án của tôi là gì.” Với mỗi đối tượng trong nguồn dữ liệu, bạn cũng bao gồm metadata dưới dạng tệp *.metadata.json, được kho tri thức sử dụng để gán các cặp khóa/giá trị cụ thể cho từng đối tượng. Đây là nơi bạn thêm phân loại cho Project A và Project C là confidential và Project B là highly confidential, như đã đề cập trước đó. Bạn truyền bộ lọc này như một phần của yêu cầu đến Bedrock knowledge base bằng cách sử dụng RetrievalFilter trong  <a href="https://docs.aws.amazon.com/bedrock/latest/userguide/kb-test-config.html">retrievalConfiguration</a>. Đoạn mã sau đây hiển thị phản hồi từ Bedrock knowledge base:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;ResponseMetadata&#34;: </span>{
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">...</span>
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;retrievalResults&#34;: </span>[
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;content&#34;: </span>{
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;text&#34;: </span><span style="color:#e6db74">&#34;Project A status is as follows:  Project A = Sales Strategy STATUS = GREEN Project completion = 80% Notes:  we are on track to complete the project by end of month&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;type&#34;: </span><span style="color:#e6db74">&#34;TEXT&#34;</span>
+</span></span><span style="display:flex;"><span>            },
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;location&#34;: </span>{
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;s3Location&#34;: </span>{
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;uri&#34;: </span><span style="color:#e6db74">&#34;s3://amzn-s3-demo-bucket/projects/projectA/status.txt&#34;</span>
+</span></span><span style="display:flex;"><span>                },
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;type&#34;: </span><span style="color:#e6db74">&#34;S3&#34;</span>
+</span></span><span style="display:flex;"><span>            },
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;metadata&#34;: </span>{
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;x-amz-bedrock-kb-source-uri&#34;: </span><span style="color:#e6db74">&#34;s3://amzn-s3-demo-bucket/projects/projectA/status.txt&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;classification&#34;: </span><span style="color:#e6db74">&#34;confidential&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;x-amz-bedrock-kb-chunk-id&#34;: </span><span style="color:#e6db74">&#34;1%3A0%3AnTT-15UBTG7d8qG4nL6p&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;x-amz-bedrock-kb-data-source-id&#34;: </span><span style="color:#e6db74">&#34;CIUUDCONV2&#34;</span>
+</span></span><span style="display:flex;"><span>            },
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;score&#34;: </span><span style="color:#ae81ff">0.558023</span>
+</span></span><span style="display:flex;"><span>        },
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;content&#34;: </span>{
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;text&#34;: </span><span style="color:#e6db74">&#34;Project C status is as follows:  Project C = Infrastucture Update STATUS = RED Project completion = 30% Notes:  ROI is not meeting expectations, rethinking strategy with project&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;type&#34;: </span><span style="color:#e6db74">&#34;TEXT&#34;</span>
+</span></span><span style="display:flex;"><span>            },
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;location&#34;: </span>{
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;s3Location&#34;: </span>{
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;uri&#34;: </span><span style="color:#e6db74">&#34;s3://amzn-s3-demo-bucket/projects/projectC/status.txt&#34;</span>
+</span></span><span style="display:flex;"><span>                },
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;type&#34;: </span><span style="color:#e6db74">&#34;S3&#34;</span>
+</span></span><span style="display:flex;"><span>            },
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;metadata&#34;: </span>{
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;x-amz-bedrock-kb-source-uri&#34;: </span><span style="color:#e6db74">&#34;s3://amzn-s3-demo-bucket/projects/projectC/status.txt&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;classification&#34;: </span><span style="color:#e6db74">&#34;confidential&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;x-amz-bedrock-kb-chunk-id&#34;: </span><span style="color:#e6db74">&#34;1%3A0%3AnDT-15UBTG7d8qG4mb78&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;x-amz-bedrock-kb-data-source-id&#34;: </span><span style="color:#e6db74">&#34;CIUUDCONV2&#34;</span>
+</span></span><span style="display:flex;"><span>            },
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;score&#34;: </span><span style="color:#ae81ff">0.52052265</span>
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    ]
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Dữ liệu từ Project B không được bao gồm trong kết quả đầu ra vì nó được gắn nhãn là highly confidential. Dữ liệu từ Project C lại được bao gồm, trong khi Bob không nên có quyền truy cập vào dữ liệu này, vì vậy hãy cùng xem qua cách cấp quyền truy cập chính xác cho Bob.Trong các bước sau và với mẫu mã Python được cung cấp, tôi sẽ hướng dẫn cách gọi từng hàm được hiển thị trong khối mã bên dưới. Bạn có thể sử dụng đoạn mã này như một phần của ứng dụng để xác thực quyền truy cập đối với dữ liệu được trả về từ Bedrock knowledge base.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#75715e"># Thực thi quy trình làm việc</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 1. Giả định vai trò để truy cập S3</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">client_s3_oidc = assume_role(</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#ae81ff">args.client_id, args.grant_type, args.assertion,</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#ae81ff">args.role_arn, args.role_session_name, args.provider_arn</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">)</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 2. Lấy phạm vi S3 mà người gọi được cấp quyền</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">scopes = get_caller_grant_scopes(client_s3_oidc, args.account)</span>
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 3. Lọc các phần dữ liệu (chunks) dựa trên quyền của người gọi</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">authorized, not_authorized = check_grant_scopes(chunks, scopes)</span>
+</span></span></code></pre></div><h2 id="bước-1-người-dùng-sử-dụng-idp-để-đăng-nhập-vào-ứng-dụng-ai-sinh"><strong>Bước 1: Người dùng sử dụng IdP để đăng nhập vào ứng dụng AI sinh</strong></h2>
+<p>Khi Bob lần đầu truy cập vào ứng dụng AI sinh, ứng dụng sẽ chuyển hướng anh ấy qua luồng đăng nhập một lần (single sign-on) để xác thực với IdP của họ. Bob sẽ nhận được một mã định danh đã được IdP ký xác nhận danh tính của anh ấy. Ví dụ về identity token của Bob được hiển thị như sau:</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">{     &ldquo;sub&rdquo;: &ldquo;sub&rdquo;,     &ldquo;email&rdquo;: &ldquo;<a href="mailto:bob@example.com">bob@example.com</a>&rdquo;,     &ldquo;aud&rdquo;: &ldquo;bob&rdquo;,     &ldquo;iss&rdquo;: &ldquo;<a href="https://tokens.identity-solutions.example.com">https://tokens.identity-solutions.example.com</a>&rdquo;,     &ldquo;exp&rdquo;: 1744219319,     &ldquo;iat&rdquo;: 1744218719,     &ldquo;name&rdquo;: &ldquo;bob&rdquo; }</th>
+      </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+<h2 id="bước-2-trao-đổi-token-với-iam-identity-center"><strong>Bước 2: Trao đổi token với IAM Identity Center</strong></h2>
+<h2 id="sau-khi-bob-được-xác-thực-và-chuyển-token-của-mình-cho-ứng-dụng-ai-sinh-ứng-dụng-sẽ-trao-đổi-identity-token-từ-idp-với-identity-token-của-iam-identity-center-và-lấy-thông-tin-xác-thực-tạm-thời-temporary-credentials-thay-mặt-cho-bob-bạn-sẽ-tạo-một-hàm-python-có-tên-assume_role-để-truyền-nhiều-biến-khác-nhau-cho-phép-bob-giả-định-vai-trò-assume-role-trong-aws">Sau khi Bob được xác thực và chuyển token của mình cho ứng dụng AI sinh, ứng dụng sẽ trao đổi identity token từ IdP với identity token của IAM Identity Center và lấy thông tin xác thực tạm thời (temporary credentials) thay mặt cho Bob. Bạn sẽ tạo một hàm Python có tên assume_role để truyền nhiều biến khác nhau, cho phép Bob giả định vai trò (assume role) trong AWS:</h2>
+<ul>
+<li>
+<p><strong>client_id:</strong> Chuỗi định danh duy nhất cho client hoặc ứng dụng. Giá trị này là ARN (Amazon Resource Name) của ứng dụng có cấu hình OAuth grants.</p>
+</li>
+<li>
+<p><strong>grant_type:</strong> Kiểu OAuth grant, trong ví dụ này sẽ là <em>JWT Bearer</em>.</p>
+</li>
+<li>
+<p><strong>role_arn:</strong> ARN của vai trò được giả định.</p>
+</li>
+<li>
+<p><strong>role_session_name:</strong> Định danh cho phiên làm việc của vai trò được giả định.</p>
+</li>
+<li>
+<p><strong>provider_arn:</strong> ARN của nhà cung cấp ngữ cảnh (context provider) mà từ đó trusted context assertion được tạo ra.</p>
+</li>
+<li>
+<p><strong>client_assertion:</strong> Chuỗi JSON Web Token (JWT) được cấp bởi một trusted token issuer.</p>
+</li>
+</ul>
+<p>Trong hàm Python mẫu được hiển thị bên dưới, bạn sẽ thực hiện các bước sau:</p>
+<ol>
+<li>
+<p>Mở hai client boto3: sso-oidc (để tạo token với IAM) và <strong>sts</strong> (để giả định vai trò tạm thời cho Bob).</p>
+</li>
+<li>
+<p>Sử dụng <strong>client_id</strong>, <strong>grant_type</strong>, và <strong>client_assertion</strong> để gọi <strong>create_token_with_iam</strong>, tạo ra <strong>token của IAM Identity Center</strong> và gán vào biến <strong>token_response</strong>.</p>
+</li>
+<li>
+<p>Trong <strong>token_response</strong> có chứa <strong>sts:identity_context</strong>, đây là thông tin cần thiết để giả định vai trò cho Bob.</p>
+</li>
+<li>
+<p>Với <strong>identity_context</strong>, bạn truyền ngữ cảnh này vào <strong>assume_role</strong> cùng với <strong>role_arn</strong>, <strong>role_session_name</strong>, và <strong>provider_arn</strong> để lấy <strong>thông tin xác thực tạm thời (temporary credentials)</strong> cho Bob.</p>
+</li>
+<li>
+<p>Cuối cùng, bạn trả về cho ứng dụng một <strong>client boto3 cho s3-control</strong>, sử dụng thông tin xác thực tạm thời của Bob để xác minh quyền truy cập của anh ấy với <strong>S3 Access Grants</strong>.</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">def assume_role(client_id, grant_type, client_assertion, role_arn, role_session_name, provider_arn)</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Assume an IAM role using SSO/OIDC authentication and return an S3 control client.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Args:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        client_id: The ID of the OIDC client
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        grant_type: The type of grant being requested
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        client_assertion: The client assertion token
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        role_arn: ARN of the role to assume
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        role_session_name: Name for the temporary session
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        provider_arn: ARN of the identity provider
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Returns:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        boto3.client: An S3 control client with temporary credentials
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">client_oidc = boto3.client(&#39;sso-oidc&#39;)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">client_sts = boto3.client(&#39;sts&#39;)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">try</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Get ID token from IAM using SSO OIDC</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">token_response = client_oidc.create_token_with_iam(</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#ae81ff">clientId=client_id,</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#ae81ff">grantType=grant_type,</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#ae81ff">assertion=client_assertion</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">)</span>
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Extract identity context from token</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">id_token = jwt.decode(token_response[&#39;idToken&#39;], options={&#39;verify_signature&#39;: False})</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">identity_context = id_token[&#39;sts:identity_context&#39;]</span>
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Assume role using identity context</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">temp_credentials = client_sts.assume_role(</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#ae81ff">RoleArn=role_arn,</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#ae81ff">RoleSessionName=role_session_name,</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#ae81ff">ProvidedContexts=[{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#39;ProviderArn&#39;</span>: <span style="color:#ae81ff">provider_arn,</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#39;ContextAssertion&#39;</span>: <span style="color:#ae81ff">identity_context</span>
+</span></span><span style="display:flex;"><span>            }]
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">)</span>
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Create and return S3 control client with temporary credentials</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">creds = temp_credentials[&#39;Credentials&#39;]</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">return boto3.client(</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;s3control&#39;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#ae81ff">region_name=&#39;us-west-2&#39;,</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#ae81ff">aws_access_key_id=creds[&#39;AccessKeyId&#39;],</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#ae81ff">aws_secret_access_key=creds[&#39;SecretAccessKey&#39;],</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#ae81ff">aws_session_token=creds[&#39;SessionToken&#39;]</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">except ClientError as e</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">print(f&#39;Error</span>: {<span style="color:#ae81ff">e}&#39;)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">sys.exit(1)</span>
+</span></span></code></pre></div><h2 id="bước-3-truy-xuất-phạm-vi-cấp-quyền-của-người-gọi-caller-grant-scopes--tiếp-theo-bạn-cần-truy-xuất-những-gì-bob-được-phép-truy-cập-trong-nguồn-dữ-liệu-bằng-cách-sử-dụng-s3-access-grants-trong-ví-dụ-này-bạn-cần-xác-thực-dữ-liệu-mà-bob-được-cấp-quyền-truy-cập-với-nguồn-dữ-liệu-chứ-không-phải-với-từng-đối-tượng-s3-cụ-thể"><strong>Bước 3: Truy xuất phạm vi cấp quyền của người gọi (caller grant scopes)</strong>  Tiếp theo, bạn cần truy xuất những gì <strong>Bob được phép truy cập</strong> trong nguồn dữ liệu bằng cách sử dụng <strong>S3 Access Grants</strong>. Trong ví dụ này, bạn cần <strong>xác thực dữ liệu mà Bob được cấp quyền truy cập với nguồn dữ liệu</strong>, chứ không phải với từng đối tượng S3 cụ thể.</h2>
+<p>Để lấy danh sách các tiền tố (prefix) mà Bob được phép truy cập, bạn sẽ thực hiện các bước sau trong hàm <strong>get_caller_grant_scopes</strong>:</p>
+<ol>
+<li>
+<p>Truyền vào <strong>client s3control</strong> được trả về từ hàm <strong>assume_role</strong>, cùng với <strong>tài khoản (account)</strong> liên quan đến S3 Access Grants.</p>
+</li>
+<li>
+<p>Với <strong>vai trò tạm thời của Bob</strong>, bạn gọi hàm <strong>list_caller_access_grants</strong>. Lệnh này sẽ trả về danh sách <strong>các quyền truy cập (access grants)</strong> mà Bob có.</p>
+</li>
+</ol>
+<p>Ví dụ, khi bạn gọi hàm này cho Bob, bạn sẽ nhận được phản hồi từ <strong>list_caller_access_grants</strong> như bên dưới, cho thấy rằng <strong>Bob có quyền truy cập vào tiền tố <code>sales</code> và <code>projectA</code></strong>. Đoạn mã ví dụ được thể hiện như sau:</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">{     &ldquo;ResponseMetadata&rdquo;: {         &hellip;     },     &ldquo;CallerAccessGrantsList&rdquo;: [         {             &ldquo;Permission&rdquo;: &ldquo;READ&rdquo;,             &ldquo;GrantScope&rdquo;: &ldquo;s3:// amzn-s3-demo-bucket/departments/sales/*&rdquo;,             &ldquo;ApplicationArn&rdquo;: &ldquo;ALL&rdquo;         },         {             &ldquo;Permission&rdquo;: &ldquo;READ&rdquo;,             &ldquo;GrantScope&rdquo;: &ldquo;s3:// amzn-s3-demo-bucket/projects/projectA/*&rdquo;,             &ldquo;ApplicationArn&rdquo;: &ldquo;ALL&rdquo;         }     ] }</th>
+      </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+<p>Bạn thêm các phạm vi cấp quyền (scopes) vào một mảng (array) và trả mảng này về cho ứng dụng. Ví dụ về đoạn mã minh họa được hiển thị bên dưới.<strong>Lưu ý</strong>*:* bạn loại bỏ ký tự <code>*</code> khỏi access grant vì URI của từng chunk là đường dẫn đầy đủ, không chỉ là tiền tố (prefix).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">def get_caller_grant_scopes(client, account)</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Retrieve the S3 access scopes granted to a caller.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Args:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        client: S3 control client with assumed role credentials
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        account: AWS account ID
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Returns:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        List of S3 path prefixes the caller is authorized to access
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">try</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Get list of access grants for the caller</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">response = client.list_caller_access_grants(AccountId=account)</span>
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Extract S3 path prefixes and remove trailing wildcards</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">scopes = [grant[&#39;GrantScope&#39;].replace(&#39;*&#39;,&#39;&#39;) for grant in response[&#39;CallerAccessGrantsList&#39;]]</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">return scopes</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">except ClientError as e</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">print(f&#39;Error</span>: {<span style="color:#ae81ff">e}&#39;)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">sys.exit(1)</span>
+</span></span></code></pre></div><p>Tại thời điểm này, bạn đã có danh sách phạm vi cấp quyền (grant scopes) mà Bob được phép truy cập trong nguồn dữ liệu. Thông tin này giờ đây có thể được sử dụng để đối chiếu với các phần dữ liệu (chunks) được trả về từ kho tri thức (knowledge base), nhằm xác thực quyền truy cập trước khi truyền prompt cuối cùng cùng với ngữ cảnh bổ sung cho LLM.</p>
+<h2 id="bước-4-kiểm-tra-phạm-vi-cấp-quyền-của-người-gọi-check-caller-grant-scopes"><strong>Bước 4: Kiểm tra phạm vi cấp quyền của người gọi (Check caller grant scopes)</strong></h2>
+<p>Bước cuối cùng là <strong>đối chiếu các chunk được trả về từ kho tri thức</strong> với <strong>danh sách các quyền (grants)</strong> mà Bob được phép truy cập.<br>
+Để làm điều này, bạn định nghĩa hàm <strong>check_grant_scopes</strong> và truyền vào cả hai đối số: <strong>chunks</strong> và <strong>scopes</strong> mà Bob được ủy quyền truy cập.<br>
+Biến <strong>chunks</strong> là một <strong>mảng chứa các dictionary</strong>, bạn sẽ duyệt qua và xác thực từng phần dữ liệu so với danh sách <strong>scopes</strong>, như được minh họa trong đoạn mã ví dụ bên dưới.</p>
+<ol>
+<li>
+<p><strong>Duyệt qua từng chunk</strong> được truyền vào hàm.</p>
+</li>
+<li>
+<p>Với mỗi chunk, <strong>kiểm tra xem vị trí của chunk có bắt đầu bằng prefix</strong> nào nằm trong <strong>S3 access grant</strong> hay không.</p>
+</li>
+<li>
+<p>Nếu <strong>tìm thấy khớp</strong>, bạn thêm chunk đó (cùng với scope tương ứng trong S3 access grant) vào danh sách <strong>authorized chunks</strong>.</p>
+</li>
+<li>
+<p>Nếu <strong>không tìm thấy khớp</strong> trong scopes, bạn thêm chunk đó vào danh sách <strong>not_authorized chunks</strong>.</p>
+</li>
+</ol>
+<p>Hàm sẽ trả về <strong>hai danh sách</strong> — một danh sách các chunk <strong>được cấp quyền (authorized)</strong> và một danh sách các chunk <strong>bị từ chối quyền truy cập (not_authorized)</strong> — giúp bạn dễ dàng xem <strong>những phần dữ liệu nào Bob không được phép truy cập</strong>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">def check_grant_scopes(chunks, scopes)</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Check which chunks a user is authorized to access based on their granted scopes.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Args:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        chunks: List of dictionaries containing content chunks with &#39;location&#39; keys
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        scopes: List of authorized S3 path prefixes the user has access to
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Returns:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        tuple: (authorized_chunks, unauthorized_chunks)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">authorized = []</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">not_authorized = []</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># If user has no scopes, they are not authorized for any chunks</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">if not scopes</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">return [], chunks</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Check each chunk against available scopes</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">for chunk in chunks</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">location = chunk[&#39;location&#39;]</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">authorized_scope = next((scope for scope in scopes if location.startswith(scope)), None)</span>
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">if authorized_scope</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#ae81ff">chunk[&#39;scope&#39;] = authorized_scope</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#ae81ff">authorized.append(chunk)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">else</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#ae81ff">not_authorized.append(chunk)</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">return authorized, not_authorized</span>
+</span></span></code></pre></div><h4 id="khi-chạy-hàm-trên-cho-bob-cùng-với-các-chunk-được-trả-về-từ-kho-tri-thức-bạn-sẽ-nhận-được-danh-sách-các-chunk-được-cấp-quyền-authorized-chunks-và-không-được-cấp-quyền-not-authorized-chunks-như-minh-họa-trong-ví-dụ-dưới-đây">Khi chạy hàm trên cho Bob cùng với các chunk được trả về từ kho tri thức, bạn sẽ nhận được danh sách các chunk được cấp quyền (authorized chunks) và không được cấp quyền (not authorized chunks) như minh họa trong ví dụ dưới đây.</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#75715e"># Authorized:</span>
+</span></span><span style="display:flex;"><span>[
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;content&#34;: </span><span style="color:#e6db74">&#34;Project A status is as follows:  Project A = Sales Strategy STATUS = GREEN Project completion = 80% Notes:  we are on track to complete the project by end of month&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;location&#34;: </span><span style="color:#e6db74">&#34;s3://amzn-s3-demo-bucket/projects/projectA/status.txt&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;scope&#34;: </span><span style="color:#e6db74">&#34;s3://amzn-s3-demo-bucket/projects/projectA/&#34;</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>]
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Not Authorized:</span>
+</span></span><span style="display:flex;"><span>[
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;content&#34;: </span><span style="color:#e6db74">&#34;Project C status is as follows:  Project C = Infrastucture Update STATUS = RED Project completion = 30% Notes:  ROI is not meeting expectations, rethinking strategy with project&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;location&#34;: </span><span style="color:#e6db74">&#34;s3://amzn-s3-demo-bucket/projects/projectC/status.txt&#34;</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>]
+</span></span></code></pre></div><p><strong>Các yếu tố cần xem xét trong giải pháp</strong></p>
+<p>Khi triển khai kiến trúc cấp <strong>quyền truy cập (authorization)</strong> cho các hệ thống RAG, có một số yếu tố quan trọng cần hiểu rõ vì chúng ảnh hưởng đến bảo mật, hiệu năng và khả năng mở rộng. Việc cân nhắc đúng những yếu tố này giúp đảm bảo rằng hệ thống của bạn duy trì được mức độ kiểm soát bảo mật mạnh mẽ, đồng thời tối ưu hiệu suất và linh hoạt với nhiều nguồn dữ liệu khác nhau. Dưới đây là các điểm quan trọng cần đánh giá khi thiết kế và triển khai mô hình cấp quyền này:</p>
+<ul>
+<li>
+<p>Trong ví dụ này, bạn đã sử dụng <strong>S3 Access Grants</strong> như một cách để kiểm tra quyền truy cập. Tuy nhiên, kiến trúc này <strong>hoàn toàn có thể áp dụng cho các nguồn dữ liệu khác</strong>, miễn là <strong>URI của nguồn dữ liệu</strong> được trả về từ <strong>kho tri thức</strong>, và <strong>API có sẵn</strong> để kiểm tra quyền truy cập của principal — tương tự như hàm <strong>get_caller_grant_scopes</strong> được mô tả ở phần trước.</p>
+</li>
+<li>
+<p>Việc sử dụng <strong>S3 Access Grants</strong> cung cấp cơ chế xác thực để principal truy cập vào <strong>nguồn dữ liệu</strong>. Tuy nhiên, bạn vẫn có thể áp dụng  <a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/tagging-and-policies.html">chính sách kiểm soát truy cập bổ sung</a>  cho từng bucket bằng cách thêm <strong>thẻ khóa/giá trị (key/value tag)</strong> hoặc <strong>chính sách ở cấp nguồn dữ liệu</strong>, nếu cần. Bằng cách này, principal có thể bị từ chối truy cập bucket <strong>ngay cả khi S3 Access Grants cho phép</strong>.<br>
+Để hỗ trợ chức năng này, bạn có thể <strong>thêm metadata cho cơ sở dữ liệu vector</strong> để <strong>hệ thống lọc truy vấn</strong> vào kho tri thức, như trong ví dụ trước.</p>
+</li>
+<li>
+<p>Giống như dữ liệu trong kho tri thức có thể trở nên lỗi thời giữa các lần đồng bộ (resync), danh sách phạm vi được cấp quyền (authorized scopes) cũng có thể không còn chính xác theo thời gian. Bạn cần xác định tần suất làm mới danh sách quyền (bước 3 trong Hình 4) và thời lượng hiệu lực của vai trò được giả định (bước 2 trong Hình 4).</p>
+</li>
+<li>
+<p>Tùy thuộc vào các chunk mà principal được phép truy cập và kết quả trả về từ kho tri thức, một số chunk có thể bị loại bỏ trước khi gửi đến LLM.<br>
+Về mặt bảo mật, điều này là tốt, vì nó đảm bảo người dùng không thể truy cập dữ liệu mà họ không có quyền.</p>
+</li>
+</ul>
+<p><strong>Kết luận</strong></p>
+<p>Trong bài viết này, tôi đã giới thiệu cho bạn <strong>một mô hình kiến trúc giúp thực hiện cơ chế cấp quyền mạnh mẽ</strong> đối với các kết quả được trả về từ <strong>kho tri thức (knowledge base)</strong>. Bạn đã cùng tìm hiểu <strong>tầm quan trọng của việc cấp quyền chặt chẽ</strong> trong kho tri thức, cũng như <strong>cách triển khai cơ chế này bằng Amazon S3 Access Grants</strong>.</p>
+<p>Cuối cùng, chúng ta đã cùng xem qua <strong>các ví dụ mã thực tế</strong>, minh họa cách cơ chế này hoạt động khi kết hợp <strong>Amazon Bedrock Knowledge Bases</strong> với <strong>S3 Access Grants</strong> — cho phép bạn kiểm soát truy cập dữ liệu một cách <strong>an toàn, linh hoạt và hiệu quả hơn</strong> trong các hệ thống RAG.</p>
+<hr>
+<p>Để tìm hiểu thêm về <strong>bảo mật trong các hệ thống AI sinh (generative AI)</strong>, bạn có thể tham khảo thêm các bài viết khác trên <a href="https://aws.amazon.com/blogs/security/">AWS Security Blog</a> và các  <a href="https://aws.amazon.com/blogs/machine-learning/category/artificial-intelligence/generative-ai/">AWS blog posts covering generative AI</a> trên <strong>AWS Blog</strong>.</p>
+<p>Nếu bạn có <strong>phản hồi</strong> về bài viết này, vui lòng để lại bình luận trong <strong>phần Comments</strong> bên dưới.<br>
+Nếu bạn có <strong>câu hỏi</strong> liên quan đến nội dung bài viết, hãy  l<a href="https://console.aws.amazon.com/support/home">iên hệ AWS Support</a>. để được hỗ trợ.</p>
+<hr>
+<h3 id="giới-thiệu-về-các-tác-giả"><strong>Giới thiệu về các tác giả</strong></h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left"><img src="#ZgotmplZ" alt=""></th>
+          <th style="text-align: left">Riggs Goodman III Riggs là Kiến trúc sư Giải pháp Đối tác Cấp cao (Principal Partner Solution Architect) tại AWS. Trọng tâm hiện tại của ông là bảo mật và mạng cho AI, cung cấp hướng dẫn kỹ thuật, mô hình kiến trúc và định hướng cho khách hàng và đối tác trong việc xây dựng các khối lượng công việc AI trên AWS. Nội bộ tại AWS, Riggs tập trung vào việc thúc đẩy chiến lược kỹ thuật tổng thể và đổi mới trên các nhóm dịch vụ AWS để giải quyết những thách thức của khách hàng và đối tác.</th>
+      </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+<p>.</p>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="../../../vi/3-blogstranslated/3.1-blog1/" title="Blog 1"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="../../../vi/3-blogstranslated/3.3-blog3/" title="Blog 3" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="../../../js/clipboard.min.js?1765184658"></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1765184658"></script>
+    <script src="../../../js/perfect-scrollbar.jquery.min.js?1765184658"></script>
+    <script src="../../../js/jquery.sticky.js?1765184658"></script>
+    <script src="../../../js/featherlight.min.js?1765184658"></script>
+    <script src="../../../js/highlight.pack.js?1765184658"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="../../../js/modernizr.custom-3.6.0.js?1765184658"></script>
+    <script src="../../../js/learn.js?1765184658"></script>
+    <script src="../../../js/hugo-learn.js?1765184658"></script>
+
+    <link href="../../../mermaid/mermaid.css?1765184658" rel="stylesheet" />
+    <script src="../../../mermaid/mermaid.js?1765184658"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <script>
+  (function (i, s, o, g, r, a, m) {
+    i["GoogleAnalyticsObject"] = r;
+    ((i[r] =
+      i[r] ||
+      function () {
+        (i[r].q = i[r].q || []).push(arguments);
+      }),
+      (i[r].l = 1 * new Date()));
+    ((a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]));
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m);
+  })(
+    window,
+    document,
+    "script",
+    "https://www.google-analytics.com/analytics.js",
+    "ga",
+  );
+
+  ga("create", "UA-158079754-2", "auto");
+  ga("send", "pageview");
+</script>
+
+
+<script>
+  window.MathJax = {
+    tex: {
+      packages: {'[+]': ['base', 'ams']},
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[','\\]']]
+    }
+  };
+</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+l.js"></script>
+  </body>
+</html>
